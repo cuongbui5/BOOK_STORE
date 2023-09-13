@@ -20,6 +20,8 @@ namespace BOOK_STORE_DEMO.Models
         public int Quantity { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+        public Boolean IsDeleted { get; set; }
+
         public ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

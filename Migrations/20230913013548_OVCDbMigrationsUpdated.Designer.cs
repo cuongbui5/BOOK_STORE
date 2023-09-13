@@ -4,6 +4,7 @@ using BOOK_STORE_DEMO.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BOOK_STORE_DEMO.Migrations
 {
     [DbContext(typeof(BookStoreDBContext))]
-    partial class BookStoreDBContextModelSnapshot : ModelSnapshot
+    [Migration("20230913013548_OVCDbMigrationsUpdated")]
+    partial class OVCDbMigrationsUpdated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
