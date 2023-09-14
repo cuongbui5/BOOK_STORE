@@ -1,4 +1,6 @@
 using BOOK_STORE_DEMO.Models;
+using BOOK_STORE_DEMO.Repository;
+using BOOK_STORE_DEMO.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,8 +10,13 @@ builder.Services.AddDbContext<BookStoreDBContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IAuthService,AuthService>();
 
+
+
+var app = builder.Build();
+app.UseStaticFiles();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

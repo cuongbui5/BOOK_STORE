@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MGsB1G9EJJ3jrWY7F7whdU12/mml40YGrcSORs8+qdED+ReQW+k6pY+FVb7Iy997N/xfAF/siAg5GsGJOBSQEw==",
+  "dgSpecHash": "8F5AA5YeGMlCAhlCcxcm3bzxUcRdtH1zteY3Iv3zgxmq2Mv9l9SbjVTIu02DlDB1YN0KnADOBZGyqPk6W8X7cg==",
   "success": true,
   "projectFilePath": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\BOOK_STORE_DEMO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
