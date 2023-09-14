@@ -1,6 +1,11 @@
-﻿using BOOK_STORE_DEMO.Dtos;
+﻿using System.Security.Claims;
+using BOOK_STORE_DEMO.Dtos;
+using BOOK_STORE_DEMO.Dtos.Request;
 using BOOK_STORE_DEMO.Models;
 using BOOK_STORE_DEMO.Repository;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 namespace BOOK_STORE_DEMO.Services;
 
 public class AuthService:IAuthService
@@ -24,7 +29,7 @@ public class AuthService:IAuthService
             User newUser = new User();
             newUser.Username = userDto.Username;
             newUser.Password = BCrypt.Net.BCrypt.HashPassword(userDto.Password);
-            newUser.Role = "ADMIN";
+            newUser.Role = "USER";
             newUser.CreatedAt = DateTime.Now;
             userRepository.AddUser(newUser);
             
@@ -34,7 +39,17 @@ public class AuthService:IAuthService
         {
             throw new Exception(e.Message);
         }
-        
-        
+    }
+
+    public User Login(LoginRequest loginRequest)
+    {
+        User user = userRepository.GetUserByUsername(loginRequest.Username);
+        if (BCrypt.Net.BCrypt.Verify(loginRequest.Password, user.Password))
+        {
+            return user;
+        }
+
+        return null;
+
     }
 }
