@@ -1,5 +1,9 @@
 using BOOK_STORE_DEMO.Models;
+using BOOK_STORE_DEMO.Repository;
+using BOOK_STORE_DEMO.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<BookStoreDBContext>(options =>
@@ -8,8 +12,26 @@ builder.Services.AddDbContext<BookStoreDBContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IAuthService,AuthService>();
 
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option =>
+{
+    option.LoginPath = "/Auth/Login";
+    option.ExpireTimeSpan = TimeSpan.FromMinutes(10);
+    
+});
+builder.Services.AddAuthorization(option =>
+{
+   option.AddPolicy("ADMIN", policy =>
+   {
+       policy.RequireClaim("Role", "ADMIN");
+   });
+});
+
+var app = builder.Build();
+app.UseStaticFiles();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -22,11 +44,11 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Auth}/{action=Login}/{id?}");
 
 app.Run();
