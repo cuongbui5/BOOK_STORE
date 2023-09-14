@@ -11,6 +11,7 @@ namespace BOOK_STORE_DEMO.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            
             migrationBuilder.CreateTable(
                 name: "Addresses",
                 columns: table => new
@@ -189,6 +190,7 @@ namespace BOOK_STORE_DEMO.Migrations
                     CartId = table.Column<int>(type: "int", nullable: false),
                     BookId = table.Column<int>(type: "int", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
+                    IsDeleted=table.Column<Boolean>(type:"bit",nullable:false,defaultValue:false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>

@@ -85,3 +85,4 @@ C:\Users\admin\source\repos\BOOK_STORE_DEMO\obj\Debug\net6.0\refint\BOOK_STORE_D
 C:\Users\admin\source\repos\BOOK_STORE_DEMO\obj\Debug\net6.0\BOOK_STORE_DEMO.pdb
 C:\Users\admin\source\repos\BOOK_STORE_DEMO\obj\Debug\net6.0\BOOK_STORE_DEMO.genruntimeconfig.cache
 C:\Users\admin\source\repos\BOOK_STORE_DEMO\obj\Debug\net6.0\ref\BOOK_STORE_DEMO.dll
+C:\Users\admin\source\repos\BOOK_STORE_DEMO\bin\Debug\net6.0\BCrypt.Net-Next.dll
