@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "_Layout";
+   
+}
+@model Category
+<form asp-controller="Category" asp-action="Update" asp-route-id="@ViewBag.Category.Id" method="post" class="mt-3">
+    <div style="margin-top:7px" class="form-group row">
+        <div class="col-sm-10">
+            <input asp-for="Name" value="@ViewBag.Category.Name" class="form-control" placeholder="Name Category">
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+
+</form>
