@@ -1,0 +1,91 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Book
+<div asp-validation-summary="All" class="text-danger"></div>
+ <form asp-controller="Book" asp-action="Create" method="post" class="mt-3" enctype="multipart/form-data">
+    <div style="margin-top:7px" class="form-group row">
+        <label asp-for="Name" class="col-sm-2 col-form-label">Tên sách</label>
+        <div class="col-sm-10">
+            <input asp-for="Name" class="form-control">
+        </div>
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div style="margin-top:7px" class="form-group row">
+        <label asp-for="Price" class="col-sm-2 col-form-label">Giá bán</label>
+        <div class="col-sm-10">
+            <input asp-for="Price" class="form-control">
+        </div>
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div style="margin-top:7px" class="form-group row">
+        <label asp-for="Description" class="col-sm-2 col-form-label">Mô tả</label>
+        <div class="col-sm-10">
+            <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+        </div>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div style="margin-top:7px" class="form-group row">
+        <label asp-for="Author" class="col-sm-2 col-form-label">Tác giả</label>
+        <div class="col-sm-10">
+            <input asp-for="Author" class="form-control">
+        </div>
+        <span asp-validation-for="Author" class="text-danger"></span>
+    </div>
+    <div style="margin-top:7px" class="form-group row">
+        <label asp-for="PublishDate" class="col-sm-2 col-form-label">Ngày xuất bản</label>
+        <div class="col-sm-10">
+            <input asp-for="PublishDate" class="form-control">
+        </div>
+        <span asp-validation-for="PublishDate" class="text-danger"></span>
+    </div>
+    <div style="margin-top:7px" class="form-group row">
+        <label asp-for="Publisher" class="col-sm-2 col-form-label">Nhà xuất bản</label>
+        <div class="col-sm-10">
+            <input asp-for="Publisher" class="form-control">
+        </div>
+        <span asp-validation-for="Publisher" class="text-danger"></span>
+    </div>
+    <div style="margin-top:7px" class="form-group row">
+        <label asp-for="CategoryId" class="col-sm-2 col-form-label">Thể loại</label>
+        <div class="col-sm-10">
+            <select asp-for="CategoryId" class="custom-select mr-sm-2"
+                    asp-items="@ViewBag.Categories"></select>
+        </div>
+    </div>
+    <div style="margin-top:7px" class="form-group row">
+        <label class="col-sm-2 col-form-label" for="imgFile">Ảnh bìa</label>
+        <div class="col-sm-10">
+            <input type="file" class="form-control" id="imgFile" name="imgFile" onchange="chooseFile(this)">
+        </div>
+    </div>
+    <div style="margin-top:7px" class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+            <img id="image" style="width:200px;height:280px;object-fit:cover" src="" />
+        </div>
+    </div>
+    <div style="margin-top:20px" class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Thêm</button>
+            <a asp-controller="Book" asp-action="ListBook" class="btn btn-primary" style="margin-left:10px">Danh sách sản phẩm</a>
+        </div>
+    </div>
+ </form>
+ @section Scripts{
+     <script>
+         function chooseFile(fileInput){
+             if (fileInput.files && fileInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload =function (e) {
+                    $("#image").attr("src",e.target.result)
+                }
+                reader.readAsDataURL(fileInput.files[0])
+             }
+         }
+     </script>
+ }
+
+
