@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\BOOK_STORE_DEMO.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\test.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\test.jpg"
+    },
+    {
       "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\css\\sb-admin-2.css",
       "PackagePath": "staticwebassets\\css\\sb-admin-2.css"
     },
@@ -19,6 +23,18 @@
     {
       "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\img\\login_background.jpg",
+      "PackagePath": "staticwebassets\\img\\login_background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\img\\password_background.jpg",
+      "PackagePath": "staticwebassets\\img\\password_background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\img\\register_background.jpg",
+      "PackagePath": "staticwebassets\\img\\register_background.jpg"
     },
     {
       "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\img\\undraw_posting_photo.svg",

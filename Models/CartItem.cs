@@ -11,17 +11,14 @@ namespace BOOK_STORE_DEMO.Models
         [ForeignKey("Cart")]
         public int CartId { get; set; }
         
-        public Cart Cart { get; set; }
+        public virtual Cart? Cart { get; set; }
         [ForeignKey("Book")]
         public int BookId { get; set; }
         
-        public Book Book { get; set; }
+        public virtual Book? Book { get; set; }
 
         public int Quantity { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        public Boolean IsDeleted { get; set; }
-
-        public ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

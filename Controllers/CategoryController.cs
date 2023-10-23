@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using BOOK_STORE_DEMO.Models;
 using BOOK_STORE_DEMO.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BOOK_STORE_DEMO.Controllers;
-
+[Authorize(Policy = "ADMIN")]
 public class CategoryController : Controller
 {
 
@@ -35,8 +36,17 @@ public class CategoryController : Controller
     [HttpPost]
     public IActionResult Create(Category category)
     {
+        if (!ModelState.IsValid)
+        {
+
+            return RedirectToAction("Index");
+
+        }
         categoryService.AddCategory(category);   
         return RedirectToAction("Index","Category");
+        
+        
+        
     }
     
     public IActionResult Update(int id)
@@ -49,6 +59,12 @@ public class CategoryController : Controller
     [HttpPost]
     public IActionResult Update(Category category,int id)
     {
+        if (!ModelState.IsValid)
+        {
+
+            return RedirectToAction("Update");
+
+        }
         categoryService.UpdateCategory(category,id);  
         return RedirectToAction("Index","Category");
     }

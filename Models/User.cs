@@ -6,9 +6,7 @@ namespace BOOK_STORE_DEMO.Models
 {
     public class User
     {
-        public User()
-        {
-        }
+       
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -17,7 +15,6 @@ namespace BOOK_STORE_DEMO.Models
         public string? Password { get; set; }
         public string? Role { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public ICollection<UserAdress>? UserAdresses { get; set; }
-        public ICollection<Review>? Reviews { get; set; }
+     
     }
 }

@@ -1,4 +1,4 @@
-using BOOK_STORE_DEMO.Models;
+using BOOK_STORE_DEMO.Data;
 using BOOK_STORE_DEMO.Repository;
 using BOOK_STORE_DEMO.Repository.impl;
 using BOOK_STORE_DEMO.Services;

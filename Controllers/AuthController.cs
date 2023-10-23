@@ -61,6 +61,10 @@ namespace BOOK_STORE_DEMO.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginRequest loginRequest)
         {
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction("Login");
+            }
             User user = authService.Login(loginRequest);
             if (user!=null)
             {

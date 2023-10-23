@@ -8,7 +8,8 @@ namespace BOOK_STORE_DEMO.Models
         [Key] 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string Name { get; set; }
+        [Required(ErrorMessage = "Vui lòng nhập tên.")]
+        public string? Name { get; set; }
       
     }
 }
