@@ -1,0 +1,55 @@
+﻿
+
+@{
+    Layout = "_Layout";
+    
+}
+
+
+@model Category
+<div>
+    <form asp-controller="Category" asp-action="Create" method="post" class="mt-3">
+        <div style="margin-top:7px" class="form-group row">
+            <div class="col-sm-10">
+                <input asp-for="Name" class="form-control" placeholder="Name Category">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create</button>
+
+    </form>
+    <table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+         <th>Name</th>
+                <th>Action</th>
+       
+ 
+    </tr>
+    </thead>
+    <tbody>
+   @if (ViewBag.Categories != null)
+          {
+              @foreach (var s in ViewBag.Categories)
+              {
+                  <tr>
+                      <td>@s.Id</td>
+                      <td>@s.Name</td>
+                      <td>
+                          <a asp-controller="Category" asp-action="Update" asp-route-id="@s.Id" type="button" class="btn btn-primary">Update</a>
+                          <a asp-controller="Category" asp-action="Delete" asp-route-id="@s.Id" type="button" class="btn btn-danger">Delete</a>
+                      </td>
+                  </tr>
+              }
+          }
+          else
+          {
+              <tr>
+                  <td colspan="2">Không có danh mục nào.</td>
+              </tr>
+          }
+    </tbody>
+    </table>
+</div>
+

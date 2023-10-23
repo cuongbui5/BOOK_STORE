@@ -1,0 +1,77 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<Book>
+@if (Model.Count() > 0)
+{
+    <a asp-controller="Book" asp-action="Create" class="btn btn-primary">Thêm sản phẩm</a>
+    <h1 align="center">Danh sách sản phẩm</h1>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Tên sách</th>
+                <th scope="col">Giá bán</th>
+                <th scope="col">Tác giả</th>
+                <th scope="col">Ngày xuất bản</th>
+                <th scope="col">Nhà xuất bản</th>
+                <th scope="col">Ảnh bìa</th>
+                <th scope="col">Thể loại</th>
+                <th scope="col">Ngày tạo</th>
+                <th scope="col">Chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Book b in Model)
+            {
+                <tr>
+                    <td>@b.Name</td>
+                    <td>@b.Price</td>
+                    <td>@b.Author</td>
+                    <td>@b.PublishDate</td>
+                    <td>@b.Publisher</td>
+                    <td>
+                        <img src="~/Upload/images/@b.ImageCover" style="width:200px;height:280px;object-fit:cover" alt="Ảnh bìa" />
+                    </td>
+                    <td>@b.Category.Name</td>
+                    <td>@b.CreatedAt</td>
+                    <td><a class="btn btn-warning" asp-controller="Book" asp-action="Edit" asp-route-id="@b.Id" style="margin-right:5px">Edit</a><a class="btn btn-danger delete-btn1" id="@b.Id" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Xóa</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Cảnh báo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="font-size:18px">
+                    Bạn có chắc chắn muốn xóa
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <a asp-controller="" asp-action="" class="btn btn-primary delete-btn2">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts{
+    <script>
+        $('.delete-btn1').click(function (e) {
+            var id = $(this).attr('id')
+            $('.delete-btn2').attr('href', `/Book/Delete/${id}`)
+        })
+    </script>
+    }
+}
+else
+{
+    <h1 align="center">Hiện tại không có sản phẩm nào!</h1>
+    <a asp-controller="Book" asp-action="Create" class="btn btn-primary">Thêm sản phẩm</a>
+}
+

@@ -1,8 +1,12 @@
-﻿using BOOK_STORE_DEMO.Dtos;
+﻿using System.Security.Claims;
+using BOOK_STORE_DEMO.Dtos;
+using BOOK_STORE_DEMO.Dtos.Request;
 using BOOK_STORE_DEMO.Models;
 using BOOK_STORE_DEMO.Validate;
 using Microsoft.AspNetCore.Mvc;
 using BOOK_STORE_DEMO.Services;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 
 namespace BOOK_STORE_DEMO.Controllers
@@ -23,6 +27,7 @@ namespace BOOK_STORE_DEMO.Controllers
         }
         public IActionResult Login()
         {
+           
             return View();
         }
 
@@ -52,5 +57,44 @@ namespace BOOK_STORE_DEMO.Controllers
             
             return View(userDto);
         }
+        
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginRequest loginRequest)
+        {
+            User user = authService.Login(loginRequest);
+            if (user!=null)
+            {
+                List<Claim> claims = new List<Claim>()
+                {
+                    new Claim(ClaimTypes.NameIdentifier, user.Username),
+                    new Claim("Role", user.Role)
+                };
+                ClaimsIdentity claimsIdentity =
+                    new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                AuthenticationProperties properties = new AuthenticationProperties()
+                {
+                    AllowRefresh = false,
+                    IsPersistent = true,
+                };
+                await HttpContext.SignInAsync(
+                    CookieAuthenticationDefaults.AuthenticationScheme,
+                    new ClaimsPrincipal(claimsIdentity),
+                    properties);
+            }
+
+            if (user.Role == "ADMIN")
+            {
+                return RedirectToAction("Index","Admin");
+            }
+            return RedirectToAction("Index","Home");
+           
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login", "Auth");
+        }
     }
+   
 }
