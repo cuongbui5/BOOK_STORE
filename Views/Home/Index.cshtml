@@ -1,8 +1,169 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome User @ViewBag.UserId</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="products_container movement-container">
+        <div class="product-categori">
+            <div class="sidebar-left">
+                <div class="title-left">
+                    <h3>Categories</h3>
+                </div>
+                <div class="list-group list-group-collapse list-group-sm">
+                    <a href="#" class="list-group-item list-group-item-action"> History <small class="text-muted">(150) </small></a>
+                    <a href="#" class="list-group-item list-group-item-action"> Comedy <small class="text-muted">(150) </small></a>
+                    <a href="#" class="list-group-item list-group-item-action"> Sci-fi <small class="text-muted">(150) </small></a>
+                    <a href="#" class="list-group-item list-group-item-action"> Honor <small class="text-muted">(11)</small></a>
+                    <a href="#" class="list-group-item list-group-item-action"> Thrills <small class="text-muted">(22)</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="right-product-box">
+                <div class="product-item-filter">
+                    <div class="title-right"><h3>All Products</h3></div>
+                    <div class="toolbar-sorter-right">
+                        <div class="group-sort">
+                            <div class="dropdown">
+                                SORT BY
+                                <span class="left-icon"></span>
+                                <span class="right-icon"></span>
+                                <div class="sort-type">
+                                    <a href="#"><span></span>From High to Low</a>
+                                    <a href="#"><span></span>From Low to High</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="card_item" data-name="p-1">
+                        <a asp-controller="Home" asp-action="Detail">
+                            <div class="image">
+                                <img class="img_item" src="~/Image/book_1.jpg" alt="book" />
+                            </div>
+                            <div class="overview">
+                                <p>Ở một góc nhân gian</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="price">
+                                    $15.00
+                                </div>
+                                <button class="btn btn_addCart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card_item" data-name="p-2">
+                        <a asp-controller="Home" asp-action="Detail">
+                            <div class="image">
+                                <img class="img_item" src="~/Image/book_2.jpg" alt="book" />
+                            </div>
+                            <div class="overview">
+                                <p>Ở một góc nhân gian</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="price">
+                                    $15.00
+                                </div>
+                                <button type="submit" class="btn btn_addCart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card_item" data-name="p-3">
+                        <a asp-controller="Home" asp-action="Detail">
+
+                            <div class="image">
+                                <img class="img_item" src="~/Image/book_2.jpg" alt="book" />
+                            </div>
+                            <div class="overview">
+                                <p>Ở một góc nhân gian</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="price">
+                                    $15.00
+                                </div>
+                                <button class="btn btn_addCart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card_item" data-name="p-4">
+                        <a asp-controller="Home" asp-action="Detail">
+                            <div class="image">
+                                <img class="img_item" src="~/Image/book_1.jpg" alt="book" />
+                            </div>
+                            <div class="overview">
+                                <p>Ở một góc nhân gian</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="price">
+                                    $15.00
+                                </div>
+                                <button class="btn btn_addCart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card_item" data-name="p-5">
+                        <a asp-controller="Home" asp-action="Detail">
+                            <div class="image">
+                                <img class="img_item" src="~/Image/book_1.jpg" alt="book" />
+                            </div>
+                            <div class="overview">
+                                <p>Ở một góc nhân gian</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="price">
+                                    $15.00
+                                </div>
+                                <button class="btn btn_addCart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="btn_pre"><span><i class="fa-solid fa-arrow-left-long"></i></span>prev</button>
+                    <ul class="dots">
+                        <li class="dots__dot active" data-page="1">1</li>
+                        <li class="dots__dot" data-page="2">2</li>
+                        <li class="dots__dot" data-page="3">3</li>
+                        <li class="dots__dot" data-page="4">4</li>
+                        <li class="dots__dot" data-page="5">5</li>
+                    </ul>
+                    <button class="btn_next">next<span><i class="fa-solid fa-arrow-right-long"></i></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+

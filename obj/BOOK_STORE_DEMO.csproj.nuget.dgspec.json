@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\BOOK_STORE_DEMO.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\New folder\\BOOK_STORE\\BOOK_STORE_DEMO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\BOOK_STORE_DEMO.csproj": {
+    "C:\\Users\\Admin\\Desktop\\New folder\\BOOK_STORE\\BOOK_STORE_DEMO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\BOOK_STORE_DEMO.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder\\BOOK_STORE\\BOOK_STORE_DEMO.csproj",
         "projectName": "BOOK_STORE_DEMO",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\BOOK_STORE_DEMO.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder\\BOOK_STORE\\BOOK_STORE_DEMO.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder\\BOOK_STORE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +70,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.16, )"
             }
           },
           "imports": [

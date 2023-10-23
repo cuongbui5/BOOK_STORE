@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewData["Title"] = "DetailProduct";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<div class="detail-container movement-container">
+    <div class="row detail-info">
+        <div class="col-xl-5 col-lg-5 col-md-6">
+            <div class="product-img">
+                <img class="d-block detail-img" src="~/Image/book_1.jpg" alt="First slide">
+            </div>
+        </div>
+        <div class="col-xl-7 col-lg-7 col-md-6">
+            <div class="single-product-details">
+                <h2>Fachion Lorem ipsum dolor sit amet</h2>
+                <div class="detail_price">
+                    <del>$ 60.00</del>
+                    <h5>$40.79</h5>
+                </div>
+                <p>
+                    <h4>Short Description:</h4>
+                <p>
+                    Nam sagittis a augue eget scelerisque. Nullam lacinia consectetur sagittis. Nam sed neque id eros fermentum dignissim quis at tortor. Nullam ultricies urna quis sem sagittis pharetra. Nam erat turpis, cursus in ipsum at,
+                    tempor imperdiet metus. In interdum id nulla tristique accumsan. Ut semper in quam nec pretium. Donec egestas finibus suscipit. Curabitur tincidunt convallis arcu.
+                </p>
+                <div class="buttons">
+                    <div class="btn_addCart_detail">
+                        <a class="btn hvr-hover" data-fancybox-close="" href="#">Add to cart</a>
+                    </div>
+                </div>
+                <div class="detail-rating">
+                    <p>Rating</p>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="title-related">Related Product</h3>
+    <div class="relative-products">
+        <div class="items">
+            <div class="card_item related_item" data-name="p-1">
+                <a asp-controller="Home" asp-action="Detail">
+                    <div class="image">
+                        <img class="img_item" src="~/Image/book_1.jpg" alt="book" />
+                    </div>
+                    <div class="overview">
+                        <p>Ở một góc nhân gian</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="price">
+                            $15.00
+                        </div>
+                        <button class="btn btn_addCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="card_item related_item" data-name="p-2">
+                <a asp-controller="Home" asp-action="Detail">
+                    <div class="image">
+                        <img class="img_item" src="~/Image/book_2.jpg" alt="book" />
+                    </div>
+                    <div class="overview">
+                        <p>Ở một góc nhân gian</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="price">
+                            $15.00
+                        </div>
+                        <button type="submit" class="btn btn_addCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="card_item related_item" data-name="p-3">
+                <a asp-controller="Home" asp-action="Detail">
+                    <div class="image">
+                        <img class="img_item" src="~/Image/book_1.jpg" alt="book" />
+                    </div>
+                    <div class="overview">
+                        <p>Ở một góc nhân gian</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="price">
+                            $15.00
+                        </div>
+                        <button class="btn btn_addCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </a>
+            </div>
+            <div class="card_item related_item" data-name="p-4">
+                <a asp-controller="Home" asp-action="Detail">
+                    <div class="image">
+                        <img class="img_item" src="~/Image/book_2.jpg" alt="book" />
+                    </div>
+                    <div class="overview">
+                        <p>Ở một góc nhân gian</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="price">
+                            $15.00
+                        </div>
+                        <button type="submit" class="btn btn_addCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

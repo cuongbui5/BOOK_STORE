@@ -9,77 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BOOK_STORE_DEMO
 build_property.RootNamespace = BOOK_STORE_DEMO
-build_property.ProjectDir = C:\Users\admin\source\repos\BOOK_STORE_DEMO\
+build_property.ProjectDir = C:\Users\Admin\Desktop\New folder\BOOK_STORE\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\admin\source\repos\BOOK_STORE_DEMO
+build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\New folder\BOOK_STORE
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Admin/Index.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Auth/Login.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Auth/Register.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Book/Create.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Book/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Book/Edit.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Book/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Book/ListBook.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Book/ListBook.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xMaXN0Qm9vay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Category/Index.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Category/Update.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Category/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Home/Index.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Home/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Home/DetailProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Home/Privacy.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Shared/Admin_Layout.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Shared/Admin_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Shared/Components/Render/RenderLeftMenu.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Shared/Components/Render/RenderLeftMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVuZGVyXFJlbmRlckxlZnRNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Shared/Error.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Shared/MyLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE15TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/_ViewImports.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/_ViewStart.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/BOOK_STORE_DEMO/Views/Shared/_Layout.cshtml]
+[C:/Users/Admin/Desktop/New folder/BOOK_STORE/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5cncjwajw8
