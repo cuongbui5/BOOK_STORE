@@ -6,18 +6,7 @@
 <div class="text-center">
     <div class="products_container movement-container">
         <div class="product-categori">
-            <div class="sidebar-left">
-                <div class="title-left">
-                    <h3>Categories</h3>
-                </div>
-                <div class="list-group list-group-collapse list-group-sm">
-                    <a href="#" class="list-group-item list-group-item-action"> History <small class="text-muted">(150) </small></a>
-                    <a href="#" class="list-group-item list-group-item-action"> Comedy <small class="text-muted">(150) </small></a>
-                    <a href="#" class="list-group-item list-group-item-action"> Sci-fi <small class="text-muted">(150) </small></a>
-                    <a href="#" class="list-group-item list-group-item-action"> Honor <small class="text-muted">(11)</small></a>
-                    <a href="#" class="list-group-item list-group-item-action"> Thrills <small class="text-muted">(22)</small></a>
-                </div>
-            </div>
+            @await Component.InvokeAsync("RenderCategoryMenu")
         </div>
         <div class="products">
             <div class="right-product-box">
@@ -26,13 +15,10 @@
                     <div class="toolbar-sorter-right">
                         <div class="group-sort">
                             <div class="dropdown">
-                                SORT BY
+                                FILTER BY PRICE
                                 <span class="left-icon"></span>
                                 <span class="right-icon"></span>
-                                <div class="sort-type">
-                                    <a href="#"><span></span>From High to Low</a>
-                                    <a href="#"><span></span>From Low to High</a>
-                                </div>
+                                @await Component.InvokeAsync("RenderRangePrice")
                             </div>
                         </div>
                     </div>
@@ -45,11 +31,6 @@
                             </div>
                             <div class="overview">
                                 <p>Ở một góc nhân gian</p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
                                 <div class="price">
                                     $15.00
                                 </div>
@@ -67,11 +48,6 @@
                             </div>
                             <div class="overview">
                                 <p>Ở một góc nhân gian</p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
                                 <div class="price">
                                     $15.00
                                 </div>
@@ -90,11 +66,6 @@
                             </div>
                             <div class="overview">
                                 <p>Ở một góc nhân gian</p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
                                 <div class="price">
                                     $15.00
                                 </div>
@@ -112,11 +83,6 @@
                             </div>
                             <div class="overview">
                                 <p>Ở một góc nhân gian</p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
                                 <div class="price">
                                     $15.00
                                 </div>
@@ -134,11 +100,6 @@
                             </div>
                             <div class="overview">
                                 <p>Ở một góc nhân gian</p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
                                 <div class="price">
                                     $15.00
                                 </div>
@@ -150,20 +111,10 @@
                         </a>
                     </div>
                 </div>
-
                 <div class="pagination">
-                    <button class="btn_pre"><span><i class="fa-solid fa-arrow-left-long"></i></span>prev</button>
-                    <ul class="dots">
-                        <li class="dots__dot active" data-page="1">1</li>
-                        <li class="dots__dot" data-page="2">2</li>
-                        <li class="dots__dot" data-page="3">3</li>
-                        <li class="dots__dot" data-page="4">4</li>
-                        <li class="dots__dot" data-page="5">5</li>
-                    </ul>
-                    <button class="btn_next">next<span><i class="fa-solid fa-arrow-right-long"></i></span></button>
+                    @await Component.InvokeAsync("RenderPagination")
                 </div>
             </div>
         </div>
     </div>
 </div>
-
