@@ -1,6 +1,8 @@
 ﻿using BOOK_STORE_DEMO.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using BOOK_STORE_DEMO.Dtos.Response;
+using BOOK_STORE_DEMO.Services;
 using Microsoft.AspNetCore.Authorization;
 
 namespace BOOK_STORE_DEMO.Controllers
@@ -8,16 +10,19 @@ namespace BOOK_STORE_DEMO.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IBookService bookService;
+       
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IBookService bookService)
         {
-            _logger = logger;
+            this.bookService = bookService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int?categoryId,int? page)
         {
-            return View();
+            int pageNumber = (page ?? 1);
+            BookResponse bookResponse =bookService.GetBookByPageAndCategory(categoryId,pageNumber);
+            return View(bookResponse);
         }
 
         public IActionResult Privacy()
@@ -29,6 +34,13 @@ namespace BOOK_STORE_DEMO.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        
+        
+        public IActionResult Detail(int bookId)
+        {
+            Book book = bookService.GetBookById(bookId);
+            return View(book);
         }
     }
 }
