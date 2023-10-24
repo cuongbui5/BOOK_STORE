@@ -1,8 +1,55 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "MyLayout";
 }
+@model BOOK_STORE_DEMO.Dtos.Response.BookResponse
 
-<div class="text-center">
-    <h1 class="display-4">Welcome User @ViewBag.UserId</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <div class="filter-container">
+        
+        @await Component.InvokeAsync("RenderCategory")
+    </div>
+
+    <div class="row">
+        @if (Model.Books.Count() == 0)
+        {
+            <div class="col-12">
+                <p>Not Found Book</p>
+            </div>
+        }
+        else
+        {
+            @foreach (var book in Model.Books)
+            {
+                <div class="col-3">
+                    <div class="card my-2 store-card">
+                        <a class="a-cleanup" asp-controller="Home" asp-action="Detail" asp-route-bookId="@book.Id">
+                            <img src="~/Upload/images/@book.ImageCover" class="card-img-top card-img-custom">
+                            <div class="card-body" style="height: 6em;">
+                                <h5 class="mb-3">@book.Name</h5>
+                            </div>
+                            <div class="card-body">
+                                <span class="card-text">@book.Price.ToString("c")</span>
+                            </div>
+                            <button type="button" class="btn btn-primary">Add Cart</button>
+                        </a>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    <div>
+      <nav aria-label="Page navigation example">
+          <ul class="pagination">
+             @foreach (var i in Enumerable.Range(1, Model.TotalPages))
+             {
+                 <li class="page-item @(Model.CurrentPage == i ? "active" : "")">
+                     <a asp-controller="Home" asp-action="Index" asp-route-page="@i" asp-route-categoryId="@Model.CategoryId" class="page-link">@i</a>
+                 </li>
+             }
+              
+          </ul>
+      </nav>
+    </div>
 </div>
