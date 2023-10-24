@@ -5,8 +5,48 @@
       "PackagePath": "staticwebassets\\BOOK_STORE_DEMO.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\test.jpg",
-      "PackagePath": "staticwebassets\\Upload\\images\\test.jpg"
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\astudyindrowning.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\astudyindrowning.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\suddenlyamurder.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\suddenlyamurder.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thedeathigavehim.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\thedeathigavehim.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thefragilethreadsofpower.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\thefragilethreadsofpower.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thelonggame.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\thelonggame.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\theonlygirlintown.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\theonlygirlintown.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thescarletveil.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\thescarletveil.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thewakeupcall.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\thewakeupcall.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thievesgambit.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\thievesgambit.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thisishowweendthings.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\thisishowweendthings.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\youagain.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\youagain.jpg"
     },
     {
       "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\css\\sb-admin-2.css",
