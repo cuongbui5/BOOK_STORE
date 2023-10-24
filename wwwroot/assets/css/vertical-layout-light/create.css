@@ -1,0 +1,28 @@
+.content-wrapper form input {
+    width: 800px;
+    height: 42px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.content-wrapper form div {
+    margin-top: 14px;
+}
+
+.content-wrapper form label {
+    /* font-weight: bold; */
+}
+
+.content-wrapper form textarea {
+    width: 800px;
+    height: 200px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.content-wrapper form select {
+    width: 800px;
+    height: 42px;
+    font-size: 14px;
+    padding-left: 15px;
+}
