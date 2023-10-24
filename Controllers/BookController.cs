@@ -19,11 +19,7 @@ namespace BOOK_STORE_DEMO.Controllers
             this.categoryService = categoryService;
             this.webHostEnvironment = webHostEnvironment;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
-
+      
         public IActionResult ListBook()
         {
             IEnumerable<Book> books=bookService.GetAllBooks();
@@ -76,12 +72,7 @@ namespace BOOK_STORE_DEMO.Controllers
             return RedirectToAction(nameof(ListBook));
         }
 
-        public IActionResult Detail(int id)
-        {
-            Book book = bookService.GetBookById(id);
-            return View(book);
-        }
-
+      
         [HttpGet]
         public IActionResult Create()
         {
