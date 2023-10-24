@@ -16,6 +16,8 @@ public class AuthService:IAuthService
     {
         this.userRepository = userRepository;
     }
+    
+    
 
     public void Register(UserDto userDto)
     {
@@ -51,5 +53,10 @@ public class AuthService:IAuthService
 
         return null;
 
+    }
+
+    public User GetUserByUsername(string username)
+    {
+        return userRepository.GetUserByUsername(username);
     }
 }

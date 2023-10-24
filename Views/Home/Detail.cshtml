@@ -4,33 +4,36 @@
     Layout = "MyLayout";
 }
 @model Book
-
-<div class="detail-container movement-container">
-    <div class="row detail-info">
-        <div class="col-xl-5 col-lg-5 col-md-6">
-            <div class="product-img">
-                <img class="d-block detail-img" src="~/Upload/images/@Model.ImageCover" alt="First slide">
-            </div>
-        </div>
-        <div class="col-xl-7 col-lg-7 col-md-6">
-            <div class="single-product-details">
-                <h2>@Model.Name</h2>
-                <div class="detail_price">
-                    <h5>@Model.Price</h5>
-                </div>
-                <p>
-                    <h4>Description:</h4>
-                <p>
-                   @Model.Description
-                </p>
-                <div class="buttons">
-                    <div class="btn_addCart_detail">
-                        <a class="btn hvr-hover" data-fancybox-close="" href="#">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  
-   
+<div class="container">
+		<div class="card-custom">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img class="img-custom" src="~/Upload/images/@Model.ImageCover" /></div>
+						
+						</div>
+						
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">@Model.Name</h3>
+						<p class="price">price: <span>$@Model.Price</span></p>
+					
+						<p class="product-description">Description: @Model.Description</p>
+						<p class="product-description">Author: <span>@Model.Author</span></p>
+						<p class="product-description">Category: <span>@Model.Category?.Name</span></p>
+						<p class="product-description">Publisher: <span>@Model.Publisher</span></p>
+						<p class="product-description">Publish Date: <span>@Model.PublishDate</span></p>
+						
+						
+						<div class="action">
+							<a asp-action="CreateCartItem" asp-route-bookId="@Model.Id" asp-controller="CartItem" class="add-to-cart btn btn-default" type="button">add to cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 </div>
+

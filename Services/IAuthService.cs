@@ -8,5 +8,7 @@ public interface IAuthService
 {
     void Register(UserDto userDto);
     User Login(LoginRequest loginRequest);
-    
+
+    User GetUserByUsername(string username);
+
 }

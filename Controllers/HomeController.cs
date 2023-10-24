@@ -1,9 +1,11 @@
 ﻿using BOOK_STORE_DEMO.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
 using BOOK_STORE_DEMO.Dtos.Response;
 using BOOK_STORE_DEMO.Services;
 using Microsoft.AspNetCore.Authorization;
+using BOOK_STORE_DEMO.Models;
 
 namespace BOOK_STORE_DEMO.Controllers
 {
@@ -11,11 +13,17 @@ namespace BOOK_STORE_DEMO.Controllers
     public class HomeController : Controller
     {
         private readonly IBookService bookService;
+        private readonly ICartItemService cartItemService;
+        private readonly IAuthService authService;
+        private readonly ICartService cartService;
        
 
-        public HomeController(IBookService bookService)
+        public HomeController(IBookService bookService, ICartItemService cartItemService,IAuthService authService,ICartService cartService)
         {
             this.bookService = bookService;
+            this.cartItemService = cartItemService;
+            this.authService = authService;
+            this.cartService = cartService;
         }
 
         public IActionResult Index(int?categoryId,int? page)
@@ -41,6 +49,20 @@ namespace BOOK_STORE_DEMO.Controllers
         {
             Book book = bookService.GetBookById(bookId);
             return View(book);
+        }
+        public IActionResult Cart()
+        {
+            string username = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (String.IsNullOrEmpty(username))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
+            Cart cart = cartService.GetCartByUserUserName(username);
+            IEnumerable<CartItem> cartItems = cartItemService.GetCartItemsByCartId(cart.Id);
+            
+           
+            return View(cartItems);
         }
     }
 }

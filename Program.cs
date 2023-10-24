@@ -1,8 +1,10 @@
 using BOOK_STORE_DEMO.Data;
+using BOOK_STORE_DEMO.Repositories.IRepository;
 using BOOK_STORE_DEMO.Repository;
 using BOOK_STORE_DEMO.Repository.impl;
 using BOOK_STORE_DEMO.Services;
 using BOOK_STORE_DEMO.Services.impl;
+using BOOK_STORE_DEMO.Services.IService;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,6 +22,12 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryService,CategoryService>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IBookService, BookService>();
+
+builder.Services.AddScoped<ICartRepository, CartRepository>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<ICartItemRepository, CartItemRepository>();
+builder.Services.AddScoped<ICartItemService, CartItemService>();
+
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option =>
 {

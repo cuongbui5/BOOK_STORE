@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DwI3878boRrlkUKL010jVMuLtgPVQ2sKt50PhIGq4So=",
+  "Hash": "DgOma1vN7SS3jors2a1MKnea2Cqau2hKYn7MeqfPK6c=",
   "Source": "BOOK_STORE_DEMO",
   "BasePath": "_content/BOOK_STORE_DEMO",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\css\\style.css",
+      "SourceId": "BOOK_STORE_DEMO",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\",
+      "BasePath": "_content/BOOK_STORE_DEMO",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\favicon.ico",
