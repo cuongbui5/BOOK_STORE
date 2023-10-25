@@ -60,9 +60,20 @@ namespace BOOK_STORE_DEMO.Controllers
 
             Cart cart = cartService.GetCartByUserUserName(username);
             IEnumerable<CartItem> cartItems = cartItemService.GetCartItemsByCartId(cart.Id);
+            decimal totalAmount = 0;
+            foreach (var i in cartItems)
+            {
+                
+                decimal price = (decimal)(i.Book?.Price ?? 0);
+                totalAmount += price * i.Quantity;
+            }
+            CartResponse cartResponse = new CartResponse();
+            cartResponse.Id = cart.Id;
+            cartResponse.CartItems = cartItems;
+            cartResponse.Total = totalAmount;
             
            
-            return View(cartItems);
+            return View(cartResponse);
         }
     }
 }

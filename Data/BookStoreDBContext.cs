@@ -14,6 +14,9 @@ namespace BOOK_STORE_DEMO.Data
            
 
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<OrderItem>()
+                .Property(oi => oi.Price)
+                .HasColumnType("decimal(18, 2)");
         }
 
         public DbSet<Book> Books { get; set; }

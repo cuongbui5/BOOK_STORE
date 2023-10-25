@@ -23,4 +23,9 @@ public class CartService:ICartService
     {
         return cartRepository.GetCartByUserUserName(username);
     }
+
+    public Cart GetCartById(int id)
+    {
+        return cartRepository.GetCartById(id);
+    }
 }

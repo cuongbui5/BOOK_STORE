@@ -23,6 +23,7 @@ public class CartItemController:Controller
     public IActionResult CreateCartItem(int bookId)
     {
         string username = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        bool bookExistsInCart = false;
         if (String.IsNullOrEmpty(username))
         {
             return RedirectToAction("Login", "Auth");
@@ -37,17 +38,64 @@ public class CartItemController:Controller
             cart.User = user;
             cartCurrent = cartService.CreateCart(cart);
         }
+        else
+        {
+            List<CartItem> cartItems = cartItemService.GetCartItemsByCartId(cartCurrent.Id);
+            
+            foreach (var item in cartItems)
+            {
+                if (item.BookId == bookId)
+                {
+                    bookExistsInCart = true;
+                    break;
+
+                }
+
+                
+            }
+        }
+
+        if (bookExistsInCart)
+        {
+            TempData["ErrorMessage"] = "The book already exists in the shopping cart!";
+            return RedirectToAction("Detail", "Home",new { bookId = bookId });
+        }
+        
+        
+        
 
         CartItem cartItem = new CartItem();
         cartItem.BookId = bookId;
         cartItem.CreatedAt=DateTime.Now;
         cartItem.Quantity = 1;
         cartItem.CartId = cartCurrent.Id;
-        cartItem.Cart = cartCurrent;
+       
         cartItemService.CreateCartItem(cartItem);
+        TempData["SuccessMessage"] = "The book has been added to the cart!";
         
-        return RedirectToAction("Index", "Home");
+        return RedirectToAction("Detail", "Home",new { bookId = bookId });
 
 
+    }
+
+    public IActionResult UpdateQuantityUp(int id)
+    {
+        CartItem cartItem = cartItemService.GetCartItemById(id);
+        cartItem.Quantity +=1;
+        cartItemService.UpdateCartItem(cartItem);
+        return RedirectToAction("Cart", "Home");
+    }
+    public IActionResult UpdateQuantityDown(int id)
+    {
+        CartItem cartItem = cartItemService.GetCartItemById(id);
+        cartItem.Quantity -= 1;
+        cartItemService.UpdateCartItem(cartItem);
+        return RedirectToAction("Cart", "Home");
+    }
+    
+    public IActionResult DeleteCartItem(int id)
+    {
+        cartItemService.DeleteCartItemById(id);
+        return RedirectToAction("Cart", "Home");
     }
 }

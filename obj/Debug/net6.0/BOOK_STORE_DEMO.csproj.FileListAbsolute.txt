@@ -301,3 +301,4 @@ C:\Users\admin\source\repos\BOOK_STORE_DEMO\bin\Debug\net6.0\runtimes\win-arm64\
 C:\Users\admin\source\repos\BOOK_STORE_DEMO\obj\Debug\net6.0\BOOK_STORE_DEMO.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\admin\source\repos\BOOK_STORE_DEMO\bin\Debug\net6.0\PagedList.dll
 C:\Users\admin\source\repos\BOOK_STORE_DEMO\bin\Debug\net6.0\PagedList.Mvc.dll
+C:\Users\admin\source\repos\BOOK_STORE_DEMO\bin\Debug\net6.0\libman.json

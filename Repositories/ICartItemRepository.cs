@@ -8,6 +8,8 @@ public interface ICartItemRepository
     void UpdateCartItem(CartItem cartItem);
     List<CartItem> GetCartItemsByCartId(int cartId);
     void DeleteCartItemByCartId(int cartId);
+    CartItem GetCartItemById(int id);
+    void DeleteCartItemById(int id);
 
-    
+
 }

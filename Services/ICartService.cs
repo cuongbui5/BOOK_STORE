@@ -6,5 +6,7 @@ public interface ICartService
 {
     Cart CreateCart(Cart cart);
     Cart GetCartByUserUserName(string username);
-    
+
+    Cart GetCartById(int id);
+
 }

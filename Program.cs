@@ -1,4 +1,5 @@
 using BOOK_STORE_DEMO.Data;
+using BOOK_STORE_DEMO.Repositories;
 using BOOK_STORE_DEMO.Repositories.IRepository;
 using BOOK_STORE_DEMO.Repository;
 using BOOK_STORE_DEMO.Repository.impl;
@@ -27,7 +28,10 @@ builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<ICartItemRepository, CartItemRepository>();
 builder.Services.AddScoped<ICartItemService, CartItemService>();
-
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IOrderItemRepository, OrderItemRepository>();
+builder.Services.AddScoped<IOrderItemService, OrderItemService>();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option =>
 {

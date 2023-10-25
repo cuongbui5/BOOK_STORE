@@ -25,8 +25,9 @@ public class CartItemRepository:ICartItemRepository
     public void UpdateCartItem(CartItem cartItem)
     {
         context.CartItems.Update(cartItem);
-        
-           
+        context.SaveChanges();
+
+
     }
 
     public List<CartItem> GetCartItemsByCartId(int cartId)
@@ -43,5 +44,21 @@ public class CartItemRepository:ICartItemRepository
         }
 
         context.SaveChanges();
+    }
+
+    public CartItem GetCartItemById(int id)
+    {
+        return context.CartItems.Find(id);
+    }
+
+    public void DeleteCartItemById(int id)
+    {
+        CartItem cartItem = context.CartItems.Find(id);
+        if (cartItem != null)
+        {
+            context.CartItems.Remove(cartItem);
+            context.SaveChanges();
+        }
+        
     }
 }

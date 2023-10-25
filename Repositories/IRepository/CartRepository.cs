@@ -38,4 +38,9 @@ public class CartRepository:ICartRepository
     {
         return context.Carts.Where(c => c.User.Username == username).FirstOrDefault();
     }
+
+    public Cart GetCartById(int id)
+    {
+        return context.Carts.Find(id);
+    }
 }

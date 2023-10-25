@@ -7,4 +7,5 @@ public interface ICartRepository
     Cart CreateCart(Cart cart);
     void DeleteCartById(int cartId);
     Cart GetCartByUserUserName(string username);
+    Cart GetCartById(int id);
 }

@@ -18,6 +18,11 @@ public class CartItemService:ICartItemService
         return cartItemRepository.CreateCartItem(cartItem);
     }
 
+    public CartItem GetCartItemById(int id)
+    {
+        return cartItemRepository.GetCartItemById(id);
+    }
+
     public void UpdateCartItem(CartItem cartItem)
     {
         cartItemRepository.UpdateCartItem(cartItem);
@@ -31,5 +36,10 @@ public class CartItemService:ICartItemService
     public void DeleteCartItemByCartId(int cartId)
     {
         cartItemRepository.DeleteCartItemByCartId(cartId);
+    }
+
+    public void DeleteCartItemById(int id)
+    {
+        cartItemRepository.DeleteCartItemById(id);
     }
 }

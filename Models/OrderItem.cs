@@ -19,6 +19,16 @@ namespace BOOK_STORE_DEMO.Models
 
         public int Quantity { get; set; }
 
-        public decimal price;
+        public decimal Price { get; set; }
+        public override string ToString()
+        {
+            return $"Order Item Details:\n" +
+                   $"ID: {Id}\n" +
+                   $"Order ID: {OrderId}\n" +
+                   $"Book ID: {BookId}\n" +
+                   $"Quantity: {Quantity}\n" +
+                   $"Price: {Price:C}\n"; 
+        }
+       
     }
 }
