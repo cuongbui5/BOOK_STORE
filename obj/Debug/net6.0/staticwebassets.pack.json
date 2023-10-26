@@ -5,8 +5,64 @@
       "PackagePath": "staticwebassets\\BOOK_STORE_DEMO.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\Gritthepowerofpassion.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\Gritthepowerofpassion.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\ItalianKitchen.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\ItalianKitchen.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\abriefhistoryofhumankind.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\abriefhistoryofhumankind.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\abriefhistoryoftime.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\abriefhistoryoftime.jpg"
+    },
+    {
       "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\astudyindrowning.jpg",
       "PackagePath": "staticwebassets\\Upload\\images\\astudyindrowning.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\atomichabits.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\atomichabits.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\awakenthegiantwithin.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\awakenthegiantwithin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\barefootcontessa.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\barefootcontessa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\cosmos.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\cosmos.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\daringgreatly.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\daringgreatly.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\eatpraylove.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\eatpraylove.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\howtostopworring.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\howtostopworring.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\masteringtheartoffrenchcooking.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\masteringtheartoffrenchcooking.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\mindset.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\mindset.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\startwithwhy.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\startwithwhy.jpg"
     },
     {
       "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\suddenlyamurder.jpg",
@@ -21,6 +77,10 @@
       "PackagePath": "staticwebassets\\Upload\\images\\thefragilethreadsofpower.jpg"
     },
     {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thejogofcooking.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\thejogofcooking.jpg"
+    },
+    {
       "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thelonggame.jpg",
       "PackagePath": "staticwebassets\\Upload\\images\\thelonggame.jpg"
     },
@@ -29,8 +89,20 @@
       "PackagePath": "staticwebassets\\Upload\\images\\theonlygirlintown.jpg"
     },
     {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thepowerofnow.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\thepowerofnow.jpg"
+    },
+    {
       "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thescarletveil.jpg",
       "PackagePath": "staticwebassets\\Upload\\images\\thescarletveil.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\theselfishgene.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\theselfishgene.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thesubtleartofnotgivingafuck.jpg",
+      "PackagePath": "staticwebassets\\Upload\\images\\thesubtleartofnotgivingafuck.jpg"
     },
     {
       "Id": "C:\\Users\\admin\\source\\repos\\BOOK_STORE_DEMO\\wwwroot\\Upload\\images\\thewakeupcall.jpg",

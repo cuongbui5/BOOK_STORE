@@ -155,12 +155,16 @@ body {
     font-size: 20px;
     line-height: 1.4;
 }
+
+
+
+
 /*# sourceMappingURL=style.css.map */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
 
 body {
     font-family: 'Manrope', sans-serif;
-    background:#eee;
+    background: #eee;
 }
 
 .size span {
