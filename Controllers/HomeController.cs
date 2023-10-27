@@ -26,17 +26,20 @@ namespace BOOK_STORE_DEMO.Controllers
             this.cartService = cartService;
         }
 
-        public IActionResult Index(int?categoryId,int? page)
+        public IActionResult Index(int?categoryId,int page=1)
         {
-            int pageNumber = (page ?? 1);
-            BookResponse bookResponse =bookService.GetBookByPageAndCategory(categoryId,pageNumber);
+            
+            BookResponse bookResponse =bookService.GetBookByPageAndCategory(categoryId,page);
             return View(bookResponse);
         }
 
-        public IActionResult Privacy()
+        public IActionResult BooksByCategoryAndPagination(int categoryId, int page=1)
         {
-            return View();
+            BookResponse bookResponse =bookService.GetBookByPageAndCategory(categoryId,page);
+            return PartialView("BookView", bookResponse);
         }
+
+     
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

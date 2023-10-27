@@ -7,7 +7,7 @@
     <li><a a asp-controller="Home" asp-action="Index"  class="dropdown-item">All Books</a></li>
     @foreach (var i in Model)
     {
-      <li><a a asp-controller="Home" asp-action="Index" asp-route-categoryId="@i.Id" class="dropdown-item">@i.Name</a></li>
+      <li class="li-category-id" id="@i.Id"><a  asp-controller="Home" asp-action="Index" asp-route-categoryId="@i.Id" class="dropdown-item">@i.Name</a></li>
     }
 
 

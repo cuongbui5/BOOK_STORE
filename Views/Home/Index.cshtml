@@ -46,8 +46,8 @@
           <ul class="pagination">
              @foreach (var i in Enumerable.Range(1, Model.TotalPages))
              {
-                 <li class="page-item @(Model.CurrentPage == i ? "active" : "")">
-                     <a asp-controller="Home" asp-action="Index" asp-route-page="@i" asp-route-categoryId="@Model.CategoryId" class="page-link">@i</a>
+                 <li class="page-item @(Model.CurrentPage == i ? "active" : "") li-page" id="@i">
+                     <a class="page-link">@i</a>
                  </li>
              }
               
@@ -56,3 +56,35 @@
     </div>
 </div>
 
+@section Scripts {
+    <script>
+        var categoryId=0;
+        var page=1;
+        $(".li-category-id").click(function (e) {
+           categoryId = $(this).attr("id");
+
+           $.ajax({
+             url: "BooksByCategoryAndPagination",
+             data: {categoryId,page} ,
+             success: function (response) {
+                 $("div.row").html(response);
+             }
+            });
+        });
+        
+          $(".li-page").click(function (e) {
+                   page = $(this).attr("id");
+                   $(".li-page").removeClass("active");
+                    $(this).addClass("active");
+        
+                   $.ajax({
+                     url: "BooksByCategoryAndPagination",
+                     data: {categoryId,page} ,
+                     success: function (response) {
+                         $("div.row").html(response);
+                     }
+                    });
+                });
+        
+    </script>
+}
