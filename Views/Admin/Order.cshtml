@@ -1,0 +1,72 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Admin-order";
+}
+@model IEnumerable<Order>
+@if (Model.Count() > 0)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Stt</th>
+                <th>UserName</th>
+                <th>Total</th>
+                <th>CreateAt</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int i = 1;
+            }
+            @foreach (Order order in Model)
+            {
+                <tr>
+                    <td>@i</td>
+                    <td>@order.User.Username</td>
+                    <td>@order.User.Username</td>
+                    <td>@order.CreatedAt</td>
+                    <td>
+                        <a class="btn btn-primary" asp-controller="Admin" asp-action="OrderDetail" asp-route-id="@order.Id" style="border-radius: 8px">Xem chi tiết</a>
+                        <button class="btn btn-danger delete-btn1" id="@order.Id" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="border-radius: 8px">Xóa</button>
+                    </td>
+                </tr>
+                i += 1;
+            }
+        </tbody>
+    </table>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Cảnh báo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="font-size:18px">
+                    Bạn có chắc chắn muốn xóa
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <a asp-controller="" asp-action="" class="btn btn-primary delete-btn2">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts{
+    <script>
+        $('.delete-btn1').click(function (e) {
+            var id = $(this).attr('id')
+            $('.delete-btn2').attr('href', `/Admin/DeleteOrder/${id}`)
+        })
+    </script>
+    }
+}
+else
+{
+    <h2>Không có đơn hàng nào!</h2>
+}
+

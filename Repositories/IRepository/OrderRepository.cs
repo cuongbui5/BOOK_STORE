@@ -1,5 +1,6 @@
 ﻿using BOOK_STORE_DEMO.Data;
 using BOOK_STORE_DEMO.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BOOK_STORE_DEMO.Repositories.IRepository;
 
@@ -21,5 +22,17 @@ public class OrderRepository:IOrderRepository
         Order newOrder = entityEntry.Entity;
 
         return newOrder;
+    }
+
+    public IEnumerable<Order> getAllOrders()
+    {
+        return context.Orders.Include(o=>o.User).ToList();
+    }
+
+    public void deleteByOrderID(int orderID)
+    { 
+        var recordToDetele=context.Orders.FirstOrDefault(o=>o.Id==orderID);
+        context.Orders.Remove(recordToDetele);
+        context.SaveChanges();
     }
 }

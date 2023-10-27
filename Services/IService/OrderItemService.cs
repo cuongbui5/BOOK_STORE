@@ -16,4 +16,14 @@ public class OrderItemService:IOrderItemService
     {
         return orderItemRepository.CreateOrderItem(orderItem);
     }
+
+    public IEnumerable<OrderItem> GetOrderItemsByOrderID(int orderID)
+    {
+        return orderItemRepository.GetOrderItemsByOrderID(orderID);
+    }
+
+    public void deleteByOrderID(int orderID)
+    {
+        orderItemRepository.deleteByOrderID(orderID);
+    }
 }
