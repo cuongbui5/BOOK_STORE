@@ -1,47 +1,81 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@{
+
+
+@section Index {
+    <link rel="stylesheet" href="~/assets/css/vertical-layout-light/read.css" />
 }
+
 @model IEnumerable<Book>
 @if (Model.Count() > 0)
 {
-    <a asp-controller="Book" asp-action="Create" class="btn btn-primary">Thêm sản phẩm</a>
-    <h1 align="center">Danh sách sản phẩm</h1>
-    <table class="table">
-        <thead class="thead-dark">
+
+    <h2>Book Management</h2>
+    <div class="createAndFilter">
+        <div class="search">
+            <input type="text" class="form-control" placeholder="Search">
+            <button><i class="ti ti-search"></i></button>
+        </div>
+        <div class="childCreateandFilter">
+            <a asp-controller="Book" asp-action="Create" class="create-btn btn btn-primary">Create</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="menu-icon ti-filter"></i>Filter
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" >Increase</a></li>
+                    <li><a class="dropdown-item" >Decrease</a></li>
+                    <li><a class="dropdown-item" >Price</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" >Something else here</a></li>
+                </ul>
+            </li>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead>
             <tr>
-                <th scope="col">Tên sách</th>
-                <th scope="col">Giá bán</th>
-                <th scope="col">Tác giả</th>
-                <th scope="col">Ngày xuất bản</th>
-                <th scope="col">Nhà xuất bản</th>
-                <th scope="col">Ảnh bìa</th>
-                <th scope="col">Thể loại</th>
-                <th scope="col">Ngày tạo</th>
-                <th scope="col">Chức năng</th>
+                <th>ID</th>
+                <th class="demo">Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Pulish Date</th>
+                <th>Publisher</th>
+                <th>Author</th>
+                <th>Image Cover</th>
+                <th>Category ID</th>
+                <th>Created At</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
             @foreach (Book b in Model)
             {
-                <tr>
-                    <td>@b.Name</td>
-                    <td>@b.Price</td>
-                    <td>@b.Author</td>
-                    <td>@b.PublishDate</td>
-                    <td>@b.Publisher</td>
-                    <td>
-                        <img src="~/Upload/images/@b.ImageCover" style="width:200px;height:280px;object-fit:cover" alt="Ảnh bìa" />
-                    </td>
-                    <td>@b.Category.Name</td>
-                    <td>@b.CreatedAt</td>
-                    <td><a class="btn btn-warning" asp-controller="Book" asp-action="Edit" asp-route-id="@b.Id" style="margin-right:5px">Edit</a><a class="btn btn-danger delete-btn1" id="@b.Id" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Xóa</a></td>
-                </tr>
+            <tr>
+                <td>@b.Id</td>
+                <td>@b.Name</td>
+                <td>@b.Price</td>
+                <td>@b.Description</td>
+                <td>@b.PublishDate</td>
+                <td>@b.Publisher</td>
+                <td>@b.Author</td>
+                <td>
+                    <div class="Frame">
+                        <img class="ImageBook" src="~/Upload/images/@b.ImageCover" style="width:100px;height:100px;object-fit:cover; border-raidus: 0px !important;" alt="Ảnh bìa" />
+                    </div>
+                </td>
+                <td>@b.Category.Name</td>
+                <td>@b.CreatedAt</td>
+                <td>
+                        <a class="btn btn-warning" asp-controller="Book" asp-action="Edit" asp-route-id="@b.Id" style="padding: 8px 12px; background-color: orange; border-radius: 8px; color:#fff;">Edit</a>
+                        <button class="delete-btn1" id="@b.Id" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="padding: 8px 12px; background-color: red; border-radius: 8px; color:#fff;" class="btn btn-wrapper">Delete</button>
+                </td>
+            </tr>
+                
             }
         </tbody>
     </table>
-
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -71,7 +105,6 @@
 }
 else
 {
-    <h1 align="center">Hiện tại không có sản phẩm nào!</h1>
-    <a asp-controller="Book" asp-action="Create" class="btn btn-primary">Thêm sản phẩm</a>
+    <a asp-controller="Book" asp-action="Create" class="create-btn btn btn-primary">Create</a>
+    <h2>Không có sản phẩm</h2>
 }
-

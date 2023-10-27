@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BOOK_STORE_DEMO.Data
 {
+    
     public class BookStoreDBContext : DbContext
     {
         public BookStoreDBContext(DbContextOptions options) : base(options)

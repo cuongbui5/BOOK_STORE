@@ -13,3 +13,17 @@
     <button type="submit" class="btn btn-primary">Update</button>
 
 </form>
+<h2>Add Category</h2>
+<form asp-controller="Category" asp-action="Update" asp-route-id="@ViewBag.Category.Id" method="post">
+    <div class="mb-3">
+        <label for="book" class="form-label">Name</label>
+        <input asp-for="Name" value="@ViewBag.Category.Name" type="text" class="form-control" id="name">
+    </div>
+
+    <div style="margin-top:20px" class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a asp-controller="Category" asp-action="Index" class="btn btn-primary" style="margin-left:10px">List Category</a>
+        </div>
+    </div>
+</form>

@@ -85,6 +85,11 @@ namespace BOOK_STORE_DEMO.Controllers
                     new ClaimsPrincipal(claimsIdentity),
                     properties);
             }
+            else
+            {
+                ViewBag.Message = "Tài khoản hoặc mật khẩu không đúng";
+                return View();
+            }
 
             if (user.Role == "ADMIN")
             {

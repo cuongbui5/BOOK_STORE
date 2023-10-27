@@ -33,6 +33,13 @@ public class CategoryController : Controller
 
         return View();
     }
+
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+
     [HttpPost]
     public IActionResult Create(Category category)
     {
