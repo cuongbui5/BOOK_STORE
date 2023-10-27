@@ -59,7 +59,17 @@ namespace BOOK_STORE_DEMO.Controllers
             }
 
             Cart cart = cartService.GetCartByUserUserName(username);
+            if (cart == null)
+            {
+                Cart newCart = new Cart();
+                User user = authService.GetUserByUsername(username);
+                newCart.UserId = user.Id;
+                cart = cartService.CreateCart(newCart);
+            }
+           
+
             IEnumerable<CartItem> cartItems = cartItemService.GetCartItemsByCartId(cart.Id);
+           
             decimal totalAmount = 0;
             foreach (var i in cartItems)
             {

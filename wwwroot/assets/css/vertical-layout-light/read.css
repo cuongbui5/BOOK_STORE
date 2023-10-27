@@ -1,0 +1,53 @@
+
+.content-wrapper .dropdown{
+    list-style: none;
+  }
+  
+  .content-wrapper .create-btn {
+    margin: 12px;
+  } 
+  
+  .content-wrapper .dropdown a {
+    color: #000;
+  }
+  
+  .content-wrapper .dropdown a i {
+    padding: 3px;
+  }
+  
+  .content-wrapper .createAndFilter {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content-wrapper .childCreateandFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-wrapper .createAndFilter .search input {
+    border-radius: 8px;
+    font-size: 14px;
+    height: 43px;
+    width: 250px;
+  }
+  
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search button {
+    background-color: #fff;
+    border: none;
+    margin-left: -34px;
+  }
+
+
+
+table > tbody > tr > td > .ImageBook {
+    border-radius: inherit !important;
+}
