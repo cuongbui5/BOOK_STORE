@@ -14,7 +14,7 @@ namespace BOOK_STORE_DEMO.Models
         public User? User { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-       
+        public List<OrderItem> OrderItems { get; set; }
 
     }
 }

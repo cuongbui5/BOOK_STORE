@@ -26,7 +26,7 @@ public class OrderRepository:IOrderRepository
 
     public IEnumerable<Order> getAllOrders()
     {
-        return context.Orders.Include(o=>o.User).ToList();
+        return context.Orders.Include(o=>o.User).Include(o=>o.OrderItems).ToList();
     }
 
     public void deleteByOrderID(int orderID)

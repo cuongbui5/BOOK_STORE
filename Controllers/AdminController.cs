@@ -37,6 +37,6 @@ public class AdminController : Controller
     {
         orderItemService.deleteByOrderID(id);
         orderService.deleteByOrderID(id);
-        return RedirectToAction("Index");
+        return RedirectToAction("Order");
     }
 }

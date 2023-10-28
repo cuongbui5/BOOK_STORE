@@ -26,7 +26,7 @@
                 <tr>
                     <td>@i</td>
                     <td>@order.User.Username</td>
-                    <td>@order.User.Username</td>
+                    <td>$@order.OrderItems.Sum(oi=>oi.Price)</td>
                     <td>@order.CreatedAt</td>
                     <td>
                         <a class="btn btn-primary" asp-controller="Admin" asp-action="OrderDetail" asp-route-id="@order.Id" style="border-radius: 8px">Xem chi tiết</a>
