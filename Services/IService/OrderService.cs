@@ -15,4 +15,14 @@ public class OrderService:IOrderService
     {
         return orderRepository.CreateOrder(order);
     }
+
+    public IEnumerable<Order> getAllOrders()
+    {
+        return orderRepository.getAllOrders();
+    }
+
+    public void deleteByOrderID(int orderID)
+    {
+        orderRepository.deleteByOrderID(orderID);
+    }
 }

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\BOOK_STORE_DEMO.props" />
-</Project>
