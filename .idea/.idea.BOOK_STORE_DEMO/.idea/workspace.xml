@@ -8,15 +8,529 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="e7cf2919-97e2-41ea-b6a5-533423f0e510" name="Changes" comment="">
+    <list default="true" id="62cdb1db-17ef-4c09-a56b-5ceed324e26f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Admin/Order.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Admin/OrderDetail.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BOOK_STORE_DEMO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BOOK_STORE_DEMO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/FileContentIndex/07f229a1-4548-4df1-955f-453ea082955b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/config/applicationhost.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/fileList.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/fileList.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Order.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repositories/IOrderItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/IOrderItemRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repositories/IOrderRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/IOrderRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repositories/IRepository/OrderItemRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/IRepository/OrderItemRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repositories/IRepository/OrderRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/IRepository/OrderRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/IOrderItemService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IOrderItemService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/IOrderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IOrderService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/IService/OrderItemService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IService/OrderItemService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/IService/OrderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IService/OrderService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/BCrypt.Net-Next.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/BOOK_STORE_DEMO.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/BOOK_STORE_DEMO.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/BOOK_STORE_DEMO.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/BOOK_STORE_DEMO.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/BOOK_STORE_DEMO.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/BOOK_STORE_DEMO.staticwebassets.runtime.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MessagePack.Annotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MessagePack.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.AspNetCore.Razor.Language.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Build.Framework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Build.Tasks.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Build.Utilities.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Build.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.Scripting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.DiaSymReader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.DotNet.Scaffolding.Shared.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Identity.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.VisualStudio.Debugger.Contracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NuGet.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NuGet.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NuGet.DependencyResolver.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NuGet.Frameworks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NuGet.LibraryModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NuGet.Packaging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NuGet.ProjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NuGet.Protocol.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NuGet.Versioning.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PagedList.Mvc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/PagedList.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.CodeDom.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Composition.AttributedModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Composition.Convention.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Composition.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Composition.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Composition.TypedParts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Resources.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Security.Permissions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/dotnet-aspnet-codegenerator-design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/libman.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-arm/lib/net6.0/dotnet-aspnet-codegenerator-design.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-arm64/lib/net6.0/dotnet-aspnet-codegenerator-design.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/.nupkg.metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator.6.0.16.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator.6.0.16.nupkg.sha512" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/DotnetToolSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/MessagePack.Annotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/MessagePack.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.CodeAnalysis.AnalyzerUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.CodeAnalysis.CSharp.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.CodeAnalysis.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.CodeAnalysis.Scripting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.CodeAnalysis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.DiaSymReader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.DotNet.Scaffolding.Shared.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.DotNet.Scaffolding.Shared.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.DotNet.Scaffolding.Shared.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Microsoft.VisualStudio.Debugger.Contracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/NuGet.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/NuGet.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/NuGet.DependencyResolver.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/NuGet.Frameworks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/NuGet.LibraryModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/NuGet.Packaging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/NuGet.ProjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/NuGet.Protocol.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/NuGet.Versioning.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/System.Composition.AttributedModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/System.Composition.Convention.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/System.Composition.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/System.Composition.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/System.Composition.TypedParts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/System.IO.Pipelines.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/System.Security.Cryptography.Pkcs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/af/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ar/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/az/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/bg/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/bn-BD/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/build/microsoft.visualstudio.web.codegeneration.tools.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/buildMultiTargeting/microsoft.visualstudio.web.codegeneration.tools.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/cs/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/cs/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/da/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/de/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/de/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/de/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/dotnet-aspnet-codegenerator.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/dotnet-aspnet-codegenerator.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/dotnet-aspnet-codegenerator.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/dotnet-aspnet-codegenerator.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/dotnet-aspnet-codegenerator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/el/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/es/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/es/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/es/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fa/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fi-FI/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fr-BE/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/he/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/hr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/hu/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/hy/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/id/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/is/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/it/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/it/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/it/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ja/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ja/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ko-KR/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ko/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ku/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/lv/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ms-MY/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/mt/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/nb-NO/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/nb/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/nl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pl/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/pt/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ro/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ru/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ru/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/shims/win-x64/dotnet-aspnet-codegenerator.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/shims/win-x86/dotnet-aspnet-codegenerator.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/sk/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/sl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/sr-Latn/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/sr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/sv/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/th-TH/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/toolassets/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Msbuild.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/tr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/tr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/uk/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/uz-Cyrl-UZ/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/uz-Latn-UZ/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/vi/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-CN/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hans/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hant/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/dotnet-aspnet-codegenerator/6.0.16/tools/net6.0/any/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/.store/dotnet-aspnet-codegenerator/6.0.16/restore.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/BOOK_STORE_DEMO.csproj.codegeneration.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/BOOK_STORE_DEMO.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/BOOK_STORE_DEMO.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/BOOK_STORE_DEMO.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/BOOK_STORE_DEMO.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/project.razor.vs.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/project.razor.vs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/BOOK_STORE_DEMO.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/BOOK_STORE_DEMO.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/scopedcss/bundle/BOOK_STORE_DEMO.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/scopedcss/projectbundle/BOOK_STORE_DEMO.bundle.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets.pack.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets/msbuild.BOOK_STORE_DEMO.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets/msbuild.build.BOOK_STORE_DEMO.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.BOOK_STORE_DEMO.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.BOOK_STORE_DEMO.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/dotnet-aspnet-codegenerator.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
-=======
-    <list default="true" id="e7cf2919-97e2-41ea-b6a5-533423f0e510" name="Changes" comment="" />
->>>>>>> develop
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,46 +539,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2VMfKJZqjrEuATH7lQfFSTr3YyI" />
+  <component name="ProjectId" id="2XLdkKezBMuSSYHZkVOOitPs4m1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;cuong/feature-crud-category&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "develop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
+    "git-widget-placeholder": "Merging develop",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
->>>>>>> develop
   },
   "keyToStringList": {
     "rider.external.source.directories": [
@@ -109,15 +600,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e7cf2919-97e2-41ea-b6a5-533423f0e510" name="Changes" comment="" />
-      <created>1694650806348</created>
+      <changelist id="62cdb1db-17ef-4c09-a56b-5ceed324e26f" name="Changes" comment="" />
+      <created>1698412438843</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694650806348</updated>
-      <workItem from="1694650808465" duration="11420000" />
-      <workItem from="1694667605487" duration="1641000" />
-      <workItem from="1694669561822" duration="4897000" />
-      <workItem from="1694693274948" duration="1871000" />
+      <updated>1698412438843</updated>
+      <workItem from="1698412440700" duration="64000" />
     </task>
     <servers />
   </component>
