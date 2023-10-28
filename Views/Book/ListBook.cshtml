@@ -33,13 +33,12 @@
             </li>
         </div>
     </div>
-    <table class="table table-striped">
+    <table style="width: 100%">
         <thead>
             <tr>
                 <th>ID</th>
-                <th class="demo">Name</th>
+                <th>Name</th>
                 <th>Price</th>
-                <th>Description</th>
                 <th>Pulish Date</th>
                 <th>Publisher</th>
                 <th>Author</th>
@@ -56,20 +55,19 @@
                 <td>@b.Id</td>
                 <td>@b.Name</td>
                 <td>@b.Price</td>
-                <td>@b.Description</td>
                 <td>@b.PublishDate</td>
                 <td>@b.Publisher</td>
                 <td>@b.Author</td>
                 <td>
                     <div class="Frame">
-                        <img class="ImageBook" src="~/Upload/images/@b.ImageCover" style="width:100px;height:100px;object-fit:cover; border-raidus: 0px !important;" alt="Ảnh bìa" />
+                        <img class="ImageBook" src="~/Upload/images/@b.ImageCover" alt="Ảnh bìa" />
                     </div>
                 </td>
                 <td>@b.Category.Name</td>
                 <td>@b.CreatedAt</td>
                 <td>
-                        <a class="btn btn-warning" asp-controller="Book" asp-action="Edit" asp-route-id="@b.Id" style="padding: 8px 12px; background-color: orange; border-radius: 8px; color:#fff;">Edit</a>
-                        <button class="delete-btn1" id="@b.Id" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="padding: 8px 12px; background-color: red; border-radius: 8px; color:#fff;" class="btn btn-wrapper">Delete</button>
+                        <a class="btn btn-warning" asp-controller="Book" asp-action="Edit" asp-route-id="@b.Id" style="font-size: 14px;padding: 8px 12px; background-color: orange; border-radius: 8px; color:#fff;">Edit</a>
+                        <button class="delete-btn1" id="@b.Id" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="border: none; font-size: 14px;padding: 6px 9px; background-color: red; border-radius: 8px; color:#fff;" class="btn btn-wrapper">Delete</button>
                 </td>
             </tr>
                 
