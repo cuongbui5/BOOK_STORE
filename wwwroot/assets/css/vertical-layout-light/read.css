@@ -47,7 +47,22 @@
   }
 
 
+table > tbody .Frame {
+    margin: 16px 0;
+    width: 100px;
+    height: auto; 
+    
+    
 
-table > tbody > tr > td > .ImageBook {
-    border-radius: inherit !important;
+}
+
+table > tbody > tr {
+    border-bottom: 1px solid #ccc;
+}
+
+
+table > tbody > tr > td > div > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
