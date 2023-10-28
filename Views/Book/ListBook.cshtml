@@ -40,10 +40,8 @@
                 <th>Name</th>
                 <th>Price</th>
                 <th>Pulish Date</th>
-                <th>Publisher</th>
-                <th>Author</th>
                 <th>Image Cover</th>
-                <th>Category ID</th>
+                <th>Category</th>
                 <th>Created At</th>
                 <th>Action</th>
             </tr>
@@ -56,8 +54,7 @@
                 <td>@b.Name</td>
                 <td>@b.Price</td>
                 <td>@b.PublishDate</td>
-                <td>@b.Publisher</td>
-                <td>@b.Author</td>
+
                 <td>
                     <div class="Frame">
                         <img class="ImageBook" src="~/Upload/images/@b.ImageCover" alt="Ảnh bìa" />
@@ -66,7 +63,7 @@
                 <td>@b.Category.Name</td>
                 <td>@b.CreatedAt</td>
                 <td>
-                        <a class="btn btn-warning" asp-controller="Book" asp-action="Edit" asp-route-id="@b.Id" style="font-size: 14px;padding: 8px 12px; background-color: orange; border-radius: 8px; color:#fff;">Edit</a>
+                        <a class="btn btn-warning" asp-controller="Book" asp-action="Edit" asp-route-id="@b.Id" style="margin: 6px; font-size: 14px;padding: 8px 12px; background-color: orange; border-radius: 8px; color:#fff;">Edit</a>
                         <button class="delete-btn1" id="@b.Id" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="border: none; font-size: 14px;padding: 6px 9px; background-color: red; border-radius: 8px; color:#fff;" class="btn btn-wrapper">Delete</button>
                 </td>
             </tr>
