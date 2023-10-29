@@ -6,11 +6,16 @@
 
 <div>
     <div class="filter-container">
-        
+
         @await Component.InvokeAsync("RenderCategory")
     </div>
+
+
     <div id="content">
-         <div class="row">
+        <div class="row block-products">
+            <div class="col-md-10 products">
+                <h2>BOOKSTORE</h2>
+
                 @if (Model.Books.Count() == 0)
                 {
                     <div class="col-12">
@@ -19,89 +24,91 @@
                 }
                 else
                 {
-                    @foreach (var book in Model.Books)
-                    {
-                        <div class="col-3">
-                            <div class="card my-2 store-card">
-                                <a class="a-cleanup" asp-controller="Home" asp-action="Detail" asp-route-bookId="@book.Id">
-                                    <div class="ImageBlock">
-                                        <img src="~/Upload/images/@book.ImageCover" class="card-img-top card-img-custom">
+                    <div class="container">
+                        <div class="row">
+                            @foreach (var book in Model.Books)
+                            {
+                                <a asp-controller="Home" asp-action="Detail" asp-route-bookId="@book.Id" class="col-md-3 block-product">
+                                    <div class="ImageCover">
+                                        <img src="~/Upload/images/@book.ImageCover">
                                     </div>
-                                    <div class="card-body" style="height: 6em;">
-                                        <h5 class="mb-3">@book.Name</h5>
+                                    <h4>Think and Grow Rich</h4>
+                                    <p>By Napoleon Hill</p>
+                                    <div class="PriceButton">
+                                        <p>30.000₫</p>
+
                                     </div>
-                                    <div class="card-body">
-                                        <span class="card-text">$@book.Price</span>
-                                    </div>
-                                   
                                 </a>
-                            </div>
+                            }
                         </div>
-                    }
+                    </div>
                 }
+
             </div>
-        
-            <div>
-                 <nav aria-label="Page navigation example">
-                     <ul class="pagination">
-                        @foreach (var i in Enumerable.Range(1, Model.TotalPages))
-                        {
-                            <li class="page-item @(Model.CurrentPage == i ? "active" : "") li-page" id="@i">
-                                <a class="page-link">@i</a>
-                            </li>
-                        }
-                         
-                     </ul>
-                 </nav>
-               </div>
+
+        </div>
+
+        <div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    @foreach (var i in Enumerable.Range(1, Model.TotalPages))
+                    {
+                        <li class="page-item @(Model.CurrentPage == i ? "active" : "") li-page" id="@i">
+                            <a class="page-link">@i</a>
+                        </li>
+                    }
+
+                </ul>
+            </nav>
+        </div>
 
     </div>
 
-   
+
 </div>
 
 @section Scripts {
-   <script>
-       var categoryId = 0;
-       var page = 1;
-   
-       // Tạo một hàm để xử lý việc load dữ liệu
-       function loadData(categoryId, page) {
-           $.ajax({
-               url: "BooksByCategoryAndPagination",
-               data: { categoryId, page },
-               success: function (response) {
-                   $("div#content").html(response);
-                   // Gọi lại mã JavaScript cho PartialView ở đây
-                   initializePartialView();
-               }
-           });
-       }
-   
-       // Đăng ký sự kiện click cho các nút category
-       $(".li-category-id").click(function (e) {
-           categoryId = $(this).attr("id");
-           page = 1; // Reset page về 1 khi thay đổi category
-   
-           loadData(categoryId, page);
-       });
-   
-       // Đăng ký sự kiện click cho các nút page
-       $(".li-page").click(function (e) {
-           page = $(this).attr("id");
-   
-           loadData(categoryId, page);
-       });
-   
-       // Hàm khởi tạo mã JavaScript cho PartialView
-       function initializePartialView() {
-           // Đặt lại sự kiện click cho các nút page trong PartialView ở đây
-           $(".li-page").click(function (e) {
-               page = $(this).attr("id");
-   
-               loadData(categoryId, page);
-           });
-       }
-   </script>
+    <script>
+        var categoryId = 0;
+        var page = 1;
+
+        // Tạo một hàm để xử lý việc load dữ liệu
+        function loadData(categoryId, page) {
+            $.ajax({
+                url: "BooksByCategoryAndPagination",
+                data: { categoryId, page },
+                success: function (response) {
+                    $("div#content").html(response);
+                    // Gọi lại mã JavaScript cho PartialView ở đây
+                    initializePartialView();
+                }
+            });
+        }
+
+        // Đăng ký sự kiện click cho các nút category
+        $(".li-category-id").click(function (e) {
+            categoryId = $(this).attr("id");
+            page = 1; // Reset page về 1 khi thay đổi category
+
+            loadData(categoryId, page);
+        });
+
+        // Đăng ký sự kiện click cho các nút page
+        $(".li-page").click(function (e) {
+            page = $(this).attr("id");
+
+            loadData(categoryId, page);
+        });
+
+        // Hàm khởi tạo mã JavaScript cho PartialView
+        function initializePartialView() {
+            // Đặt lại sự kiện click cho các nút page trong PartialView ở đây
+            $(".li-page").click(function (e) {
+                page = $(this).attr("id");
+
+                loadData(categoryId, page);
+            });
+        }
+    </script>
 
 }
