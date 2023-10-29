@@ -8,18 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62cdb1db-17ef-4c09-a56b-5ceed324e26f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BOOK_STORE_DEMO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BOOK_STORE_DEMO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Repositories/IBookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/IBookRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Repositories/IRepository/BookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/IRepository/BookRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/IBookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IBookService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/IService/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IService/BookService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/MyLayout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/MyLayout.cshtml" afterDir="false" />
-    </list>
+    <list default="true" id="62cdb1db-17ef-4c09-a56b-5ceed324e26f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +88,7 @@
       <updated>1698412438843</updated>
       <workItem from="1698412440700" duration="64000" />
       <workItem from="1698537936493" duration="1037000" />
-      <workItem from="1698548783380" duration="4638000" />
+      <workItem from="1698548783380" duration="4873000" />
     </task>
     <servers />
   </component>
