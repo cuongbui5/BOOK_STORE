@@ -10,41 +10,18 @@
 @model IEnumerable<Book>
 @if (Model.Count() > 0)
 {
-
-    <h2>Book Management</h2>
-    <div class="createAndFilter">
-        <div class="search">
-            <input type="text" class="form-control" placeholder="Search">
-            <button><i class="ti ti-search"></i></button>
-        </div>
-        <div class="childCreateandFilter">
-            <a asp-controller="Book" asp-action="Create" class="create-btn btn btn-primary">Create</a>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="menu-icon ti-filter"></i>Filter
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" >Increase</a></li>
-                    <li><a class="dropdown-item" >Decrease</a></li>
-                    <li><a class="dropdown-item" >Price</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" >Something else here</a></li>
-                </ul>
-            </li>
-        </div>
-    </div>
-    <table class="table table-striped">
+    <h2 style="text-align: center;margin:20px;">Book Management</h2>
+    <a asp-controller="Book" asp-action="Create" class="create-btn btn btn-primary" >Create</a>
+  
+    <table class="table" style="">
         <thead>
             <tr>
                 <th>ID</th>
-                <th class="demo">Name</th>
+                <th>Name</th>
                 <th>Price</th>
-                <th>Description</th>
-                <th>Pulish Date</th>
-                <th>Publisher</th>
-                <th>Author</th>
+                <th>Publish Date</th>
                 <th>Image Cover</th>
-                <th>Category ID</th>
+                <th>Category</th>
                 <th>Created At</th>
                 <th>Action</th>
             </tr>
@@ -54,22 +31,22 @@
             {
             <tr>
                 <td>@b.Id</td>
-                <td>@b.Name</td>
+                <td>
+                        <p style="font-size: 16px;margin-bottom: 0;width: 100px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">@b.Name</p>
+                </td>
                 <td>@b.Price</td>
-                <td>@b.Description</td>
                 <td>@b.PublishDate</td>
-                <td>@b.Publisher</td>
-                <td>@b.Author</td>
+
                 <td>
                     <div class="Frame">
-                        <img class="ImageBook" src="~/Upload/images/@b.ImageCover" style="width:100px;height:100px;object-fit:cover; border-raidus: 0px !important;" alt="Ảnh bìa" />
+                        <img class="ImageBook" src="~/Upload/images/@b.ImageCover" alt="Ảnh bìa" />
                     </div>
                 </td>
                 <td>@b.Category.Name</td>
                 <td>@b.CreatedAt</td>
                 <td>
-                        <a class="btn btn-warning" asp-controller="Book" asp-action="Edit" asp-route-id="@b.Id" style="padding: 8px 12px; background-color: orange; border-radius: 8px; color:#fff;">Edit</a>
-                        <button class="delete-btn1" id="@b.Id" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="padding: 8px 12px; background-color: red; border-radius: 8px; color:#fff;" class="btn btn-wrapper">Delete</button>
+                        <a class="btn btn-warning" asp-controller="Book" asp-action="Edit" asp-route-id="@b.Id" style="margin: 6px; font-size: 14px;padding: 8px 12px; background-color: orange; border-radius: 8px; color:#fff;">Edit</a>
+                        <button class="delete-btn1" id="@b.Id" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="border: none; font-size: 14px;padding: 6px 9px; background-color: red; border-radius: 8px; color:#fff;" class="btn btn-wrapper">Delete</button>
                 </td>
             </tr>
                 
