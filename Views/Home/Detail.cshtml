@@ -42,23 +42,20 @@
                     <div class="col product-item mx-auto">
                         <div class="product-img">
                             <img src="~/Upload/images/@item.ImageCover" alt="" class="img-fluid d-block mx-auto">
-                            <span class="heart-icon">
-                                <i class="far fa-heart"></i>
-                            </span>
-                            <div class="row btns w-100 mx-auto text-center">
+                            <div class="row g-1 btns w-100 mx-auto text-center">
                                 <button type="button" class="col-6 py-2">
-                                    <i class="fa fa-cart-plus"></i> Add to Cart
+                                    <a asp-action="CreateCartItem" asp-route-bookId="@Model.Book.Id" asp-controller="CartItem" type="button" class="related-product-link"><i class="fa fa-cart-plus"></i>Add to Cart</a>
                                 </button>
                                 <button type="button" class="col-6 py-2">
-                                    <i class="fa fa-binoculars"></i> View
+                                    <a class="a-cleanup related-product-link" asp-controller="Home" asp-action="Detail" asp-route-bookId="@item.Id"><i class="fa fa-binoculars"></i> View</a>
                                 </button>
                             </div>
                         </div>
 
                         <div class="product-info p-3">
-                            <span class="product-type">Electronics & Accessories</span>
-                            <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">Apple - Apple Watch Series 3 White Sports Band</a>
-                            <span class="product-price">$ 100.50</span>
+                            <span class="product-type">@item.Category.Name</span>
+                            <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">@item.Name</a>
+                            <span class="product-price">$@item.Price</span>
                         </div>
                     </div>
                 }
