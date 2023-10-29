@@ -8,23 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62cdb1db-17ef-4c09-a56b-5ceed324e26f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BOOK_STORE_DEMO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BOOK_STORE_DEMO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/FileContentIndex/05c2e987-2064-4f46-9108-64cf7d8abdb4.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/FileContentIndex/e5222041-a334-47ae-be7c-33141ce418fc.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/fileList.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/fileList.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.metadata.v7.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.projects.v7.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Book/ListBook.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Book/ListBook.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Category/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Category/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/project.razor.vs.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/project.razor.vs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/assets/css/vertical-layout-light/read.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/assets/css/vertical-layout-light/read.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/assets/css/vertical-layout-light/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/assets/css/vertical-layout-light/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="62cdb1db-17ef-4c09-a56b-5ceed324e26f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging testthanh",
+    "git-widget-placeholder": "develop",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
