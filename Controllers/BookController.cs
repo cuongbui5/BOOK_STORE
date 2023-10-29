@@ -1,11 +1,13 @@
 ﻿using BOOK_STORE_DEMO.Models;
 using BOOK_STORE_DEMO.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 
 namespace BOOK_STORE_DEMO.Controllers
 {
+    [Authorize(Policy = "ADMIN")]
     public class BookController : Controller
     {
         private readonly IBookService bookService;

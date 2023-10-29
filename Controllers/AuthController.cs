@@ -93,7 +93,7 @@ namespace BOOK_STORE_DEMO.Controllers
 
             if (user.Role == "ADMIN")
             {
-                return RedirectToAction("Index","Admin");
+                return RedirectToAction("Index","Category");
             }
             return RedirectToAction("Index","Home");
            

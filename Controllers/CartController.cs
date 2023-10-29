@@ -1,9 +1,11 @@
 ﻿using System.Security.Claims;
 using BOOK_STORE_DEMO.Models;
 using BOOK_STORE_DEMO.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BOOK_STORE_DEMO.Controllers;
+[Authorize]
 
 public class CartController: Controller
 {
