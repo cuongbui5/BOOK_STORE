@@ -9,6 +9,8 @@
         
         @await Component.InvokeAsync("RenderCategory")
     </div>
+    
+   
     <div id="content">
          <div class="row">
                 @if (Model.Books.Count() == 0)
@@ -61,15 +63,20 @@
 </div>
 
 @section Scripts {
-   <script>
+    <script>
        var categoryId = 0;
        var page = 1;
+       var searchStr="";
    
        // Tạo một hàm để xử lý việc load dữ liệu
        function loadData(categoryId, page) {
+           let data={ categoryId, page };
+           if (searchStr!=""){
+               data={...data,search:searchStr}
+           }
            $.ajax({
-               url: "BooksByCategoryAndPagination",
-               data: { categoryId, page },
+               url: "BooksByFilter",
+               data,
                success: function (response) {
                    $("div#content").html(response);
                    // Gọi lại mã JavaScript cho PartialView ở đây
@@ -77,11 +84,16 @@
                }
            });
        }
+       
+       
+      
    
        // Đăng ký sự kiện click cho các nút category
        $(".li-category-id").click(function (e) {
            categoryId = $(this).attr("id");
            page = 1; // Reset page về 1 khi thay đổi category
+           searchStr="";
+         
    
            loadData(categoryId, page);
        });
@@ -89,6 +101,7 @@
        // Đăng ký sự kiện click cho các nút page
        $(".li-page").click(function (e) {
            page = $(this).attr("id");
+           
    
            loadData(categoryId, page);
        });
@@ -102,6 +115,15 @@
                loadData(categoryId, page);
            });
        }
+       //Search
+       $(".btn-search").click(function (e){   
+           page = 1;
+           searchStr=$("#search-input").val();
+         
+           loadData( categoryId,page);
+          
+       })
+       
    </script>
 
 }

@@ -34,21 +34,36 @@ namespace BOOK_STORE_DEMO.Repository.impl
             return context.Books.Include(b=>b.Category).ToList();
         }
 
-        public BookResponse GetBookByPageAndCategory(int? categoryId, int page)
+        public BookResponse GetBookByFilter(int? categoryId, int page,string searchStr)
         {
             IEnumerable<Book> books=new List<Book>();
             BookResponse bookResponse = new BookResponse();
+            
+            if (searchStr != "")
+            {
+                books= context.Books.Where(b=>b.Name.Contains(searchStr)).ToList();
+                bookResponse.CurrentPage = page;
+                bookResponse.TotalPages = (books.Count()+Constant.PAGE_SIZE-1)/Constant.PAGE_SIZE;
+                bookResponse.Books = books.ToPagedList(page, Constant.PAGE_SIZE);
+            
+                return bookResponse;
+            }
+            
             if (categoryId == null||categoryId==0)
             {
                  books= context.Books.ToList();
-                
-                
+                 
             }
             else
             {
                 books=context.Books.Where(b=>b.CategoryId==categoryId);
                 bookResponse.CategoryId = categoryId.Value;
             }
+
+         
+            
+            
+            
 
             
             bookResponse.CurrentPage = page;

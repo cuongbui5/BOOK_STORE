@@ -36,9 +36,9 @@ namespace BOOK_STORE_DEMO.Services.impl
            bookRepository.UpdateBook(book);
         }
 
-        public BookResponse GetBookByPageAndCategory(int? category, int page)
+        public BookResponse GetBookByFilter(int? category, int page,string searchStr)
         {
-            return bookRepository.GetBookByPageAndCategory(category,page);
+            return bookRepository.GetBookByFilter(category,page, searchStr);
         }
     }
 }

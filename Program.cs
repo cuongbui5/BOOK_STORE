@@ -36,7 +36,7 @@ builder.Services.AddScoped<IOrderItemService, OrderItemService>();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option =>
 {
     option.LoginPath = "/Auth/Login";
-    option.ExpireTimeSpan = TimeSpan.FromMinutes(10);
+    option.ExpireTimeSpan = TimeSpan.FromMinutes(60);
     
 });
 builder.Services.AddAuthorization(option =>

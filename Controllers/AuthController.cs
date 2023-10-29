@@ -71,7 +71,8 @@ namespace BOOK_STORE_DEMO.Controllers
                 List<Claim> claims = new List<Claim>()
                 {
                     new Claim(ClaimTypes.NameIdentifier, user.Username),
-                    new Claim("Role", user.Role)
+                    new Claim("Role", user.Role),
+                    new Claim("id", user.Id+"")
                 };
                 ClaimsIdentity claimsIdentity =
                     new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

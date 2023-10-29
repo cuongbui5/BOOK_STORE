@@ -26,16 +26,16 @@ namespace BOOK_STORE_DEMO.Controllers
             this.cartService = cartService;
         }
 
-        public IActionResult Index(int?categoryId,int page=1)
+        public IActionResult Index(int? categoryId,int page=1,string search="")
         {
             
-            BookResponse bookResponse =bookService.GetBookByPageAndCategory(categoryId,page);
+            BookResponse bookResponse =bookService.GetBookByFilter(categoryId,page,search);
             return View(bookResponse);
         }
 
-        public IActionResult BooksByCategoryAndPagination(int categoryId, int page=1)
+        public IActionResult BooksByFilter(int categoryId, int page=1,string search="")
         {
-            BookResponse bookResponse =bookService.GetBookByPageAndCategory(categoryId,page);
+            BookResponse bookResponse =bookService.GetBookByFilter(categoryId,page,search);
             return PartialView("BookView", bookResponse);
         }
 
