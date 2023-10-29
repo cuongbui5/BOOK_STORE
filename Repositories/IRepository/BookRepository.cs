@@ -34,7 +34,16 @@ namespace BOOK_STORE_DEMO.Repository.impl
             return context.Books.Include(b=>b.Category).ToList();
         }
 
+
+    
+
+        public IEnumerable<Book> GetAllBooksByCategory(string category)
+        {
+            return context.Books.Include(b => b.Category).Where(c => c.Category.Name == category).ToList();
+        }
+
         public BookResponse GetBookByFilter(int? categoryId, int page,string searchStr)
+
         {
             IEnumerable<Book> books=new List<Book>();
             BookResponse bookResponse = new BookResponse();
@@ -59,11 +68,6 @@ namespace BOOK_STORE_DEMO.Repository.impl
                 books=context.Books.Where(b=>b.CategoryId==categoryId);
                 bookResponse.CategoryId = categoryId.Value;
             }
-
-         
-            
-            
-            
 
             
             bookResponse.CurrentPage = page;

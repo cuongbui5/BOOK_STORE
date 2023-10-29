@@ -9,6 +9,8 @@ namespace BOOK_STORE_DEMO.Services
         public IEnumerable<Book> GetAllBooks();
         public BookResponse GetBookByFilter(int? category, int page,string searchStr);
 
+        public IEnumerable<Book> GetAllBooksByCategory(string category);
+
         public Book GetBookById(int bookId);
 
         public void AddBook(Book book);

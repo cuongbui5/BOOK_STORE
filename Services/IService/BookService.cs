@@ -26,6 +26,11 @@ namespace BOOK_STORE_DEMO.Services.impl
            return bookRepository.GetAllBooks();
         }
 
+        public IEnumerable<Book> GetAllBooksByCategory(string category)
+        {
+            return bookRepository.GetAllBooksByCategory(category);
+        }
+
         public Book GetBookById(int bookId)
         {
             return bookRepository.GetBookById(bookId);

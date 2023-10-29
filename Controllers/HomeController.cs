@@ -6,6 +6,7 @@ using BOOK_STORE_DEMO.Dtos.Response;
 using BOOK_STORE_DEMO.Services;
 using Microsoft.AspNetCore.Authorization;
 using BOOK_STORE_DEMO.Models;
+using BOOK_STORE_DEMO.Dtos;
 
 namespace BOOK_STORE_DEMO.Controllers
 {
@@ -51,7 +52,13 @@ namespace BOOK_STORE_DEMO.Controllers
         public IActionResult Detail(int bookId)
         {
             Book book = bookService.GetBookById(bookId);
-            return View(book);
+            IEnumerable<Book> books = bookService.GetAllBooksByCategory(book.Category.Name);
+            BookAndBooksDto bookAndBooks = new BookAndBooksDto()
+            {
+                Book = book,
+                Books = books
+            };
+            return View(bookAndBooks);
         }
         public IActionResult Cart()
         {

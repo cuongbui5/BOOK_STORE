@@ -6,7 +6,13 @@ namespace BOOK_STORE_DEMO.Repository
     public interface IBookRepository
     {
         IEnumerable<Book> GetAllBooks();
+
         BookResponse GetBookByFilter(int?categoryId,int page,string searchStr);
+
+
+        IEnumerable<Book> GetAllBooksByCategory(string category);
+
+   
 
 
         Book GetBookById(int bookId);

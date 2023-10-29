@@ -2,7 +2,9 @@
 /*****************globals*************/
 body {
     font-family: 'open sans';
-    overflow-x: hidden; }
+    overflow-x: hidden; 
+    margin-bottom:0;
+}
 
 .img-custom {
     max-width: 70%;
@@ -202,4 +204,77 @@ body {
 
 .qty i {
     font-size: 11px;
+}
+
+
+/*----------*/
+.product-item{
+    border: 1px solid rgb(219, 219, 219);
+}
+.product-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.related-product-link{
+    text-decoration:none;
+    color:#fff;
+}
+.btns {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+.btns button{
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.btns button:hover{
+    color: #fcb941;
+}
+.product-img:hover .btns{
+    bottom: 0;
+}
+
+.heart-icon{
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.product-type{
+    font-size: 13px;
+    opacity: 0.8;
+}
+.product-name{
+    transition: all 0.3s ease-in-out;
+    font-size:16px;
+}
+.product-name:hover{
+    color: #fcb941!important;
+}
+.product-price{
+    color: #fcb941;
+    font-size:16px;
+}
+.rating{
+    font-size: 13px;
+}
+.product-item{
+    width: 250px;
+}
+
+.product-info{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:#fff;
+  gap:10px;
 }
