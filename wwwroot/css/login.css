@@ -1,0 +1,26 @@
+﻿
+body {
+    background-color: #8470f5 !important;
+    background-image: none !important;
+}
+
+
+
+.bg-login-image {
+    background: url("/assets/images/login-image.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.bg-register-image {
+    background: url("/assets/images/register-image.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.user .btn-block {
+    background-color: #8470f5;
+}
+
+
+

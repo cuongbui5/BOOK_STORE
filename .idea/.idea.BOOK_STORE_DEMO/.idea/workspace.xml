@@ -9,27 +9,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62cdb1db-17ef-4c09-a56b-5ceed324e26f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dtos/BookAndBooksDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/OwlCarousel2/assets/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/OwlCarousel2/assets/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/OwlCarousel2/assets/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/OwlCarousel2/assets/owl.theme.default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/OwlCarousel2/assets/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/OwlCarousel2/assets/owl.theme.green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/OwlCarousel2/assets/owl.theme.green.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/OwlCarousel2/assets/owl.video.play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/OwlCarousel2/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/OwlCarousel2/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Repositories/IBookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/IBookRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Repositories/IRepository/BookRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/IRepository/BookRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/IBookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IBookService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/IService/BookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IService/BookService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wwwroot/assets/images/login-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wwwroot/assets/images/register-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wwwroot/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BOOK_STORE_DEMO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BOOK_STORE_DEMO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/fileList.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BOOK_STORE_DEMO/v17/fileList.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/book_store_demo.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Constant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Constant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Admin/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Admin/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Auth/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Auth/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Auth/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/BookView.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/BookView.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Home/Detail.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Detail.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/Admin_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/Admin_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/Components/RenderCategory/RenderCategory.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/Components/RenderCategory/RenderCategory.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Shared/MyLayout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/MyLayout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libman.json" beforeDir="false" afterPath="$PROJECT_DIR$/libman.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/sb-admin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/sb-admin-2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +111,7 @@
       <workItem from="1698412440700" duration="64000" />
       <workItem from="1698537936493" duration="1037000" />
       <workItem from="1698548783380" duration="4873000" />
-      <workItem from="1698560850631" duration="310000" />
+      <workItem from="1698560850631" duration="4096000" />
     </task>
     <servers />
   </component>

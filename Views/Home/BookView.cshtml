@@ -1,46 +1,46 @@
 ﻿@model BOOK_STORE_DEMO.Dtos.Response.BookResponse
-<div class="row">
-    @if (Model.Books.Count() == 0)
-    {
-        <div class="col-12">
-            <p>Not Found Book</p>
-        </div>
-    }
-    else
-    {
-        @foreach (var book in Model.Books)
+ <div class="row gap-4">    
+    
+        @if (Model.Books.Count() == 0)
         {
-            <div class="col-3">
-                <div class="card my-2 store-card">
-                    <a class="a-cleanup" asp-controller="Home" asp-action="Detail" asp-route-bookId="@book.Id">
-                        <div class="ImageBlock">
-                            <img src="~/Upload/images/@book.ImageCover" class="card-img-top card-img-custom">
-                        </div>
-                        <div class="card-body" style="height: 6em;">
-                            <h5 class="mb-3">@book.Name</h5>
-                        </div>
-                        <div class="card-body">
-                            <span class="card-text">$@book.Price</span>
-                        </div>
-                                   
-                    </a>
-                </div>
+            <div class="col-12">
+                <p>Not Found Book</p>
             </div>
         }
-    }
-</div>
-        
-<div>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            @foreach (var i in Enumerable.Range(1, Model.TotalPages))
-            {
-                <li class="page-item @(Model.CurrentPage == i ? "active" : "") li-page" id="@i">
-                    <a class="page-link">@i</a>
-                </li>
-            }
-                         
-        </ul>
-    </nav>
-</div>
-
+        else
+        {
+            
+               
+                    @foreach (var book in Model.Books)
+                    {
+                        <a asp-controller="Home" asp-action="Detail" asp-route-bookId="@book.Id" class="col-md-3 block-product">
+                            <div class="ImageCover">
+                                <img src="~/Upload/images/@book.ImageCover">
+                            </div>
+                            <h4>Think and Grow Rich</h4>
+                            <p>By Napoleon Hill</p>
+                            <div class="PriceButton">
+                                <p>30.000₫</p>
+    
+                            </div>
+                        </a>
+                    }
+               
+         
+        }
+         </div>
+    
+<div style="margin: 30px auto;text-align: center">
+         <nav aria-label="Page navigation example">
+             <ul class="pagination" style="display: flex;justify-content: center;margin: 30px">
+                 @foreach (var i in Enumerable.Range(1, Model.TotalPages))
+                 {
+                     <li class="page-item @(Model.CurrentPage == i ? "active" : "") li-page" id="@i">
+                         <a class="page-link">@i</a>
+                     </li>
+                 }
+    
+             </ul>
+         </nav>
+     
+     </div>
