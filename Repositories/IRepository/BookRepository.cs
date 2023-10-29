@@ -34,6 +34,11 @@ namespace BOOK_STORE_DEMO.Repository.impl
             return context.Books.Include(b=>b.Category).ToList();
         }
 
+        public IEnumerable<Book> GetAllBooksByCategory(string category)
+        {
+            return context.Books.Include(b => b.Category).Where(c => c.Category.Name == category).ToList();
+        }
+
         public BookResponse GetBookByPageAndCategory(int? categoryId, int page)
         {
             IEnumerable<Book> books=new List<Book>();
