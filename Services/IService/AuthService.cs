@@ -46,7 +46,8 @@ public class AuthService:IAuthService
     public User Login(LoginRequest loginRequest)
     {
         User user = userRepository.GetUserByUsername(loginRequest.Username);
-        if (BCrypt.Net.BCrypt.Verify(loginRequest.Password, user.Password))
+       
+        if (user!=null&&BCrypt.Net.BCrypt.Verify(loginRequest.Password, user.Password))
         {
             return user;
         }

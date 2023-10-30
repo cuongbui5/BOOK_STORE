@@ -8,11 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62cdb1db-17ef-4c09-a56b-5ceed324e26f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BOOK_STORE_DEMO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BOOK_STORE_DEMO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CartController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Cart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Cart.cshtml" afterDir="false" />
-    </list>
+    <list default="true" id="62cdb1db-17ef-4c09-a56b-5ceed324e26f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +91,7 @@
       <workItem from="1698548783380" duration="4873000" />
       <workItem from="1698560850631" duration="4492000" />
       <workItem from="1698565462522" duration="456000" />
-      <workItem from="1698627486936" duration="2561000" />
+      <workItem from="1698627486936" duration="2935000" />
     </task>
     <servers />
   </component>
