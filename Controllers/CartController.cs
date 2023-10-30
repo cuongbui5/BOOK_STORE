@@ -54,6 +54,8 @@ public class CartController: Controller
        
         
         cartItemService.DeleteCartItemByCartId(id);
+      
+        TempData["Message"] = "Order created successful!";
         
         return RedirectToAction("Cart", "Home");
     }
