@@ -85,7 +85,7 @@
 
     @section Scripts{
     <script>
-        $('.delete-btn1').click(function (e) {
+        $('body').on('click', '.delete-btn1', function (e) {
             var id = $(this).attr('id')
             $('.delete-btn2').attr('href', `/Book/Delete/${id}`)
         })
