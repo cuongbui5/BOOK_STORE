@@ -13,6 +13,7 @@ namespace BOOK_STORE_DEMO.Controllers
         private readonly IBookService bookService;
         private readonly ICategoryService categoryService;
         private readonly IWebHostEnvironment webHostEnvironment;
+        private int pageSize=4;
 
         public BookController(IBookService bookService, ICategoryService categoryService,IWebHostEnvironment webHostEnvironment)
         {
@@ -24,6 +25,9 @@ namespace BOOK_STORE_DEMO.Controllers
         public IActionResult ListBook()
         {
             IEnumerable<Book> books=bookService.GetAllBooks();
+            int pageNum=(int)Math.Ceiling((float)books.Count()/pageSize);
+            ViewBag.pageNum=pageNum;
+            books=books.Take(pageSize).ToList();
             return View(books);
         }
 
@@ -119,6 +123,22 @@ namespace BOOK_STORE_DEMO.Controllers
             }
             bookService.DeleteBook(id);
             return RedirectToAction(nameof(ListBook));
+        }
+
+        public IActionResult Paging(int ?pageIndex)
+        {
+            int page;
+            if (pageIndex == null)
+            {
+                page = 1;
+            }
+            else
+            {
+                page = (int)pageIndex;
+            }
+            IEnumerable<Book> books = bookService.GetAllBooks();
+            IEnumerable<Book> result=books.Skip(pageSize*(page-1)).Take(pageSize);
+            return PartialView("BookTable",result);
         }
     }
 }

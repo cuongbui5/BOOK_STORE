@@ -12,7 +12,7 @@
 {
     <h2 style="text-align: center;margin:20px;">Book Management</h2>
     <a asp-controller="Book" asp-action="Create" class="create-btn btn btn-primary" >Create</a>
-  
+  <div class="content">
     <table class="table" style="">
         <thead>
             <tr>
@@ -53,6 +53,18 @@
             }
         </tbody>
     </table>
+    </div>
+    <div class="mt-3">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                @for (int i = 1; i <= ViewBag.pageNum; i++)
+                {
+                    <li class="page-item" id="@i"><a class="page-link">@i</a></li>
+                }
+            </ul>
+        </nav>
+    </div>
+    
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -76,6 +88,16 @@
         $('.delete-btn1').click(function (e) {
             var id = $(this).attr('id')
             $('.delete-btn2').attr('href', `/Book/Delete/${id}`)
+        })
+        $('.page-item').click(function (e) {
+            var pageIndex = $(this).attr("id")
+            $.ajax({
+                url:"Paging",
+                data: {pageIndex},
+                success:function(response){
+                    $('.content').html(response);
+                }
+            })
         })
     </script>
     }
